@@ -179,8 +179,8 @@
                 <div class="withdraw-deposit clearfix">
                     <h4>我的余额</h4>
                     <div class="money">￥21.00</div>
-                    <button>
-                        <a href="../list-chidren/balance.html">申请提现</a>
+                    <button id="button">
+                        <a href="javascript:;">申请提现</a>
                     </button>
                 </div>
 
@@ -194,8 +194,8 @@
                         收入来源
                         <select name="sourceType" id="sourceType">
                             <option value="">全部</option>
-                            <option value="1">利息分润</option>
-                            <option value="2">商品分润</option>
+                            <option value="0">利息分润</option>
+                            <option value="1">商品分润</option>
                         </select>
                     </div>
                     <div class="data">
@@ -213,43 +213,21 @@
                 </div>
                 <table class="layui-table" lay-even lay-skin="row">
                     <colgroup>
-                        <col width="300">
-                        <col width="300">
                         <col width="500">
                         <col width="500">
-                        <col width="250">
-                        <col width="250">
-                        <col width="200">
+                        <col width="500">
+                        <col width="500">
                     </colgroup>
                     <thead>
                         <tr>
-                            <th>姓名</th>
-                            <th>手机号</th>
-                            <th>身份证号码</th>
-                            <th>入职时间</th>
-                            <th>操作</th>
-                            <th>状态</th>
-                            <th>备注</th>
+                            <th>金额</th>
+                            <th>来源</th>
+                            <th>订单号</th>
+                            <th>更新时间</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td data-toggle="modal" data-target=".bs-example-modal-sm">
-                                <a href="#">+3元</a>
-                            </td>
-                            <td>商品模块分润</td>
-                            <td>2017年10月01日 15:30</td>
-                            <td>2017年10月01日 15:30</td>
-                            <td>
-                                21元
-                            </td>
-                            <td data-toggle="modal" data-target=".bs-example-modal-sm">
-                                <a href="#">查看详情</a>
-                            </td>
-                            <td>
-
-                            </td>
-                        </tr>
+                    <tbody id="financeInfo">
+                        <!-- todo -->
                     </tbody>
                 </table>
             </div>
@@ -318,6 +296,19 @@
             </div>
         </div>
     </div>
+
+    <script type="text/template" id="financeTpl">
+        {{each list}}
+        <tr id="tr" data-bid="{{$value.balanceId}}" data-cid="{{$value.clientId}}">
+            <td>{{$value.amount}}</td>
+            <td>{{if $value.source == 0}}课程机构报名{{else}}商城分润{{/if}}</td>
+            <td>{{$value.orderNum}}</td>
+            <td>
+                {{$value.createTime}}}
+            </td>
+        </tr>
+        {{/each}}
+    </script>
     <script src="../../layui.js"></script>
     <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -347,7 +338,18 @@
                 dataType: "jsonp",
                 jsonp: "jsonpCallback",
                 success: function (data) {
-                    console.log(data)
+                    var html = template("financeTpl", {
+                        list: data.data.lstUserBalanceRecord
+                    });
+                    $("#financeInfo").html(html)
+
+                    if (data.code === 1) {
+                        $("#button").on("click", function () {
+                            var cid = $("#tr").attr("data-cid");
+                            var bid = $("#tr").attr("data-bid")
+                            location.href = "../list-chidren/balance.html?"+cid+"&"+bid+""
+                        })
+                    }
                 }
             })
         })

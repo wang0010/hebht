@@ -173,7 +173,7 @@
                     <div class="balancr-info">
                         <label for="">
                             提现金额
-                            <input type="text">
+                            <input type="text" id="amount" name="amount">
                         </label>
                     </div>
                     <div class="balancr-info">
@@ -232,25 +232,24 @@
 
 
         $(".btn-yes").on("click", function () {
+            var str = location.search.substr(1).split("&")
+            var cid = str[0];
+            var bid = str[1];
+            console.log(cid, bid)
             $.ajax({
-                url: url + "clientApplyWithdraw_agreeClientApplyWithdraw.do",
-                data: { applyId: 1 },
+                url: url + "user_userApplyWithdraw.do",
+                data: {
+                    userId: cid,
+                    amount: $("#amount").val(),
+                    bankCardId: bid
+                },
                 dataType: "jsonp",
                 jsonp: "jsonpCallback",
                 success: function (data) {
-                    if (data.code === -1) {
-                        alert("不存在该申请或已经通过申请");
-                    } else if (data.code === 1) {
-                        alert("审核成功");
-                    } else if (data.code === -2) {
-                        alert("余额不足，提现金额不能大于余额");
-                    } else if (data.code === 0) {
-                        alert("审核失败");
-                    }
+                    console.log(data)
                 }
             })
         })
-
     </script>
 </body>
 
