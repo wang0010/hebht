@@ -1,0 +1,61 @@
+.dropOut-dispose{
+    width:100%;
+    background: white;
+    margin-left:0.15rem;
+    border:1px solid transparent;
+}
+input{
+    width:3.86rem;
+    height:0.4rem;
+    padding-left:0.15rem;
+    border-radius: 0.04rem;
+    border:1px solid #ccc;
+    margin-left:0.1rem;
+}
+.dropOut-dispose>h4{
+    font-size:0.18rem;
+    margin-left:0.3rem;
+    margin-top:0.3rem;
+}
+.dropOut{
+    margin-left:0.8rem;
+    margin-top:0.2rem;
+}
+.drop{
+    float: left;
+}
+.drop+.drop{
+    margin-left:1rem;
+}
+.cause{
+    padding-left:0.8rem;
+    padding-top:0.3rem;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom:0.3rem;
+}
+.cause>h4{
+    font-size:0.18rem;
+}
+.cause>textarea{
+    width:10.36rem;
+    height:1.5rem;
+    background: #f2f2f2;
+    padding-left:0.15rem;
+    padding-top:0.15rem;
+    margin-left:0.8rem;
+    margin-top:0.2rem;
+}
+.refund{
+    margin-left: 0.8rem;
+    margin-top:0.3rem;
+}
+.footer{
+    height:2rem;
+    margin-top:0.8rem;
+}
+.btn-not{
+    color:rgb(107,123,246);
+    border:1px solid rgb(107,123,246);
+    background: white;
+    margin-left:0.5rem;
+}

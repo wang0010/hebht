@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>孩儿帮后台管理系统</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layui.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/commont/input.css">
+    <link rel="stylesheet" href="../../css/commont/info.css">
+    <style>
+        .Amount-info {
+            margin-left: 0.15rem;
+            background: white;
+        }
+
+        .photo {
+            float: left;
+            margin-right: 0.5rem;
+        }
+
+        .last-self {
+            margin-left: -0.15rem;
+        }
+
+        .last-self>label>input {
+            width: 5rem;
+        }
+
+        .in {
+            text-align: left;
+        }
+
+        .in:nth-child(1) {
+            margin-left: -0.15rem;
+        }
+
+        .boxx {
+            height: 2rem;
+        }
+
+        .information:nth-child(3) {
+            padding-top: 0.2rem;
+            padding-bottom: 0.5rem !important;
+        }
+
+        .information:nth-child(5) {
+            padding-top: 0.2rem;
+            padding-bottom: 0.5rem !important;
+        }
+
+        .last2 {
+            margin-left: 0.4rem;
+        }
+
+        .last3 {
+            margin-left: -0.8rem;
+        }
+    </style>
+</head>
+
+<body class="layui-layout-body">
+
+
+
+    <div class="layui-layout layui-layout-admin">
+        <!-- 顶部导航栏 -->
+        <div class="layui-header">
+            <div class="layui-logo">
+                <a href="../../examples/index/index.html">
+                    <span class="logo"></span>
+                    孩儿帮管理平台
+                </a>
+            </div>
+            <ul class="layui-nav layui-layout-left list1">
+                <li class="layui-nav-item">
+                    <a href="../index/personage-info.html">个人信息</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../user-control/APP-user.html">账户管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../APP-admin/banner.html">APP管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../institution/institution-info.html">机构管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../by-stages/byStages-class.html">分期业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../shopping/commodity.html">商城管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../supplier/supplier.html">供货商管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../share-benefit/share-benefit.html">分润管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../financial/financial.html">财务管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../bazaar/bazaar-info.html">市场业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">权限设置</a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right list">
+                <li>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧 侧边栏 -->
+        <div class="layui-side layui-bg-black clearfix">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item sss">
+                        <a href="./commodity.html">商品管理</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="./classification.html">商品分类</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./Project-management.html">专题管理</a>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./Amount.html">金额订单</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="">代发货</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./Change-order.html">兑换订单</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="./send.html">待发货</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="javascript:;">退货管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="layui-body clearfix">
+            <!-- 内容主体区域 -->
+            <div class="layui-body-top">
+                <!-- 主体顶部 中间 -->
+                <div class="middle">
+                    <div class="layui-tab" lay-filter="tabDemo" lay-allowClose="true">
+                        <!-- <ul class="layui-tab-title">
+                            <li class="layui-this" lay-id="1">标题1</li>
+                            <li lay-id="2">标题2</li>
+                            <li lay-id="3">标题3</li>
+                            <li lay-id="4">标题4</li>
+                            <li lay-id="5">标题5</li>
+                            <li lay-id="6">标题6</li>
+                            <li lay-id="7">标题7</li>
+                            <li lay-id="8">标题8</li>
+                            <li lay-id="9">标题9</li>
+                        </ul> -->
+                        <!-- <div class="layui-tab-content">
+                  <div class="layui-tab-item layui-show">1</div>
+                  <div class="layui-tab-item">2</div>
+                  <div class="layui-tab-item">3</div>
+                  <div class="layui-tab-item">4</div>
+                  <div class="layui-tab-item">5</div>
+                </div> -->
+                    </div>
+                </div>
+                <!-- 主体顶部  左侧  -->
+                <div class="left clearfix">
+                    <div class="left-arrows">
+                        <span class="arrows arrows-left">
+                            <img src="../../images/web/home_left_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">首页
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 主体顶部 右侧 -->
+                <div class="right clearfix">
+                    <div class="left-arrows arrows-right">
+                        <span class="arrows">
+                            <img src="../../images/web/home_right_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">关闭操作
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 对应内容 信息 -->
+            <div class="silde-info">
+                <h4>待处理消息</h4>
+                <span>
+                    <img src="../../images/web/home_next_default.png" alt="">
+                </span>
+            </div>
+            <!-- 商品信息 -->
+            <div class="Amount-info clearfix">
+                <div class="info-box">
+                    <div class="information clearfix">
+                        <h4>商品信息</h4>
+                        <span class="down"></span>
+                        <span class="upDown">收起</span>
+                        <div class="self-info first clearfix">
+                            <div class="self-info-left">
+                                <label for="">商品名称
+                                    <input type="text" placeholder="美汁源果粒橙450ml">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">商品运费
+                                    <input type="text" placeholder="00.00元">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">快递公司
+                                    <input type="text" placeholder="中通快递">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="self-info-right last clearfix">
+                            <div class="self-info-left">
+                                <label for="">供应商
+                                    <input type="text" placeholder="深圳海捣网">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">品牌
+                                    <input type="text" placeholder="可口可乐">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">物流单号
+                                    <input type="text" placeholder="644930198772910">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information clearfix">
+                        <h4>商品规格</h4>
+                        <span class="down"></span>
+                        <span class="upDown">收起</span>
+                        <div class="self-info first1 clearfix">
+                            <div class="self-info-left">
+                                <label for="">商品供货价
+                                    <input type="text" placeholder="152****7926">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">商品规格
+                                    <input type="text" placeholder="152****7926">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="self-info-right last1 clearfix" id="type">
+                            <div class="self-info-left">
+                                <label for="">平台原价
+                                    <input type="text" placeholder="">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">商品颜色
+                                    <input type="text" placeholder="">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information clearfix">
+                        <span class="down"></span>
+                        <span class="upDown">收起</span>
+                        <div class="self-info first2 clearfix">
+                            <div class="self-info-left">
+                                <label for="">平台现价
+                                    <input type="text" placeholder="152****7926">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">商品尺寸
+                                    <input type="text" placeholder="152****7926">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="self-info-right last2 clearfix" id="type">
+                            <div class="self-info-left">
+                                <label for="">所需学币量
+                                    <input type="text" placeholder="">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information clearfix">
+                        <h4>订单信息</h4>
+                        <span class="down"></span>
+                        <span class="upDown">收起</span>
+                        <div class="self-info first3 clearfix">
+                            <div class="self-info-left in">
+                                <label for="">用户昵称
+                                    <input type="text" placeholder="152****7926">
+                                </label>
+                            </div>
+                            <div class="self-info-left in">
+                                <label for="">收货人
+                                    <input type="text" placeholder="史少楠">
+                                </label>
+                            </div>
+                            <div class="self-info-left last-self">
+                                <label for="">收货地址
+                                    <input type="text" placeholder="史少楠">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="self-info-right last3 clearfix" id="type">
+                            <div class="self-info-left">
+                                <label for="">用户手机号
+                                    <input type="text" placeholder="">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">联系电话
+                                    <input type="text" placeholder="">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information clearfix">
+                        <span class="down"></span>
+                        <span class="upDown">收起</span>
+                        <div class="self-info first4 clearfix">
+                            <div class="self-info-left">
+                                <label for="">订单编号
+                                    <input type="text" placeholder="152****7926">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">商品数量
+                                    <input type="text" placeholder="史少楠">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">使用学币总量
+                                    <input type="text" placeholder="史少楠">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">物流状态
+                                    <input type="text" placeholder="史少楠">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="self-info-right last4 clearfix" id="type">
+                            <div class="self-info-left">
+                                <label for="">商品属性
+                                    <input type="text" placeholder="兑换商品">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">运费
+                                    <input type="text" placeholder="运费">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">兑换时间
+                                    <input type="text" placeholder="2017年11月11日    12:00">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxx"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../../layui.js"></script>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../js/user-control/suppiler-commodity.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+
+        });
+
+
+        function btn(box, arr, fir, las) {
+            arr.onclick = function () {
+                if ($(fir).css("display") == "none") {
+                    $(fir).slideDown(300)
+                    $(las).slideDown(300)
+                    box.innerHTML = "收起"
+                    this.style.transform = "rotate(0deg)"
+                } else {
+                    $(fir).slideUp(300)
+                    $(las).slideUp(300)
+                    box.innerHTML = "展开"
+                    this.style.transform = "rotate(180deg)"
+                }
+            }
+        }
+        var arr = document.querySelectorAll(".down")
+        var box = document.querySelectorAll(".upDown")
+        for (var j = 0; j < box.length; j++) {
+            var list = box
+        }
+        for (var i = 0; i < arr.length; i++) {
+            btn(list[0], arr[0], $(".first"), $(".last"))
+            btn(list[1], arr[1], $(".first1"), $(".last1"))
+            btn(list[2], arr[2], $(".first2"), $(".last2"))
+            btn(list[3], arr[3], $(".first3"), $(".last3"))
+            btn(list[4], arr[4], $(".first4"), $(".last4"))
+            btn(list[5], arr[5], $(".first5"), $(".last5"))
+        }
+    </script>
+</body>
+
+</html>

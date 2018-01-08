@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>孩儿帮后台管理系统</title>
+    <link rel="stylesheet" href="../../lay/less/index.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layui.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/commont/input.css">
+    <link rel="stylesheet" href="../../css/user-control/ins-listAdd.css">
+    <link rel="stylesheet" href="../../css/institution/institution-info.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <!-- 顶部导航栏 -->
+        <div class="layui-header">
+            <div class="layui-logo">
+                <a href="../../examples/index/index.html">
+                    <span class="logo"></span>
+                    孩儿帮管理平台
+                </a>
+            </div>
+            <ul class="layui-nav layui-layout-left list1">
+                <li class="layui-nav-item">
+                    <a href="./../index/personage-info.html">个人信息</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./../user-control/APP-user.html">账户管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../APP-admin/banner.html">APP管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../institution/institution-info.html">机构管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../by-stages/byStages-class.html">分期业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../shopping/commodity.html">商城管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../supplier/supplier.html">供货商管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../share-benefit/share-benefit.html">分润管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../financial/financial.html">财务管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../bazaar/bazaar-info.html">市场业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">权限设置</a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right list">
+                <li>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧 侧边栏 -->
+        <div class="layui-side layui-bg-black clearfix">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item sss">
+                        <a href="javascript:;">机构信息</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="./institution-class.html">课程管理</a>
+                            </dd>
+                            <dd>
+                                <a href="./institution-teacher.html">老师管理</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./institution-finance.html">机构财务</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="./institution-deposit.html">提现管理</a>
+                            </dd>
+                            <dd>
+                                <a href="./institution-bank.html">银行卡管理</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./institution-aging.html">机构分期</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="./activity-class.html">活动课程</a>
+                            </dd>
+                            <dd>
+                                <a href="./drop-out.html">申请退课用户</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./audit.html">审核管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="layui-body clearfix">
+            <!-- 内容主体区域 -->
+            <div class="layui-body-top">
+                <!-- 主体顶部 中间 -->
+                <div class="middle"></div>
+                <!-- 主体顶部  左侧  -->
+                <div class="left">
+                    <div class="left-arrows">
+                        <span class="arrows">
+                            <img src="../../images/web/home_left_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">首页
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 主体顶部 右侧 -->
+                <div class="right clearfix">
+                    <div class="left-arrows">
+                        <span class="arrows">
+                            <img src="../../images/web/home_right_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">关闭操作
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 对应内容 信息 -->
+            <div class="silde-info">
+                <h4>待处理消息</h4>
+                <span>
+                    <img src="../../images/web/home_next_default.png" alt="">
+                </span>
+            </div>
+            <!-- 基本信息 -->
+            <div class="institution-info clearfix">
+                <div class="information clearfix">
+                    <h4>基本信息</h4>
+                    <span class="down"></span>
+                    <span class="upDown">收起</span>
+                    <div class="self-info first clearfix">
+                        <div class="self-info-left ">
+                            <label for="">机构名称
+                                <input type="text" placeholder="152****7926">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">登录账号
+                                <input type="text" placeholder="拉古斯" disabled>
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">选择地址
+                                <input type="text" placeholder="15097927270">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">创建时间
+                                <input type="text" placeholder="343学币" disabled>
+                            </label>
+                        </div>
+                        <div class="self-info-left ab">
+                            <label for="">负责人
+                                <input type="text" placeholder="某某">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">手机号
+                                <input type="text" placeholder="男">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="self-info-right last clearfix">
+                        <div class="self-info-left">
+                            <label for="">推荐码
+                                <input type="text" placeholder="拉古斯" disabled>
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">隶属机构
+                                <input type="text" placeholder="15097927270">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">详细地址
+                                <input type="text" placeholder="123456">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">更新时间
+                                <input type="text" placeholder="未认证" disabled>
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">座机
+                                <input type="text" placeholder="王某">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">邮编
+                                <input type="text" placeholder="男">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="information clearfix">
+                    <h4>总部信息</h4>
+                    <span class="down"></span>
+                    <span class="upDown">收起</span>
+                    <div class="self-info clearfix first1 ">
+                        <div class="self-info-left">
+                            <label for="">隶属机构
+                                <input type="text" placeholder="王某">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="self-info-right last1 clearfix  abs ">
+                        <div class="self-info-left">
+                            <label for="">总部座机
+                                <input type="text" placeholder="王某">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo">
+                    <h3>图片详情</h3>
+                    <div class="ins clearfix">
+                        <div class="logo">
+                            <p class="logo-info">机构LOGO</p>
+                            <div class="ins-logo">
+                                <img src="../../images/web/head_pic.png" alt="">
+                            </div>
+                            <p class="toUp">
+                                <a href="javascript:;">*点击图片上传，图片比例为1:1</a>
+                            </p>
+                        </div>
+                        <button>删除</button>
+                    </div>
+                    <!-- 机构风采 -->
+                    <div class="ins-fc clearfix">
+                        <div class="fc">
+                            <p>机构风采</p>
+                            <p>(1/5)</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="../../images/web/big_pic.png" alt="">
+                                </a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="../../images/web/big_pic.png" alt="">
+                                </a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="../../images/web/big_pic.png" alt="">
+                                </a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="../../images/web/big_pic.png" alt="">
+                                </a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="../../images/web/big_pic.png" alt="">
+                                </a>
+                                <span></span>
+                            </li>
+                        </ul>
+                        <p>
+                            <a href="">*点击上传图片，图片格式最好为4:3</a>
+                        </p>
+                        <button>全部删除</button>
+                    </div>
+                    <!-- 机构视频 -->
+                    <div class="video clearfix">
+                        <div class="fc">
+                            <p>机构视频</p>
+                            <div>
+                                <img src="../../images/web/video_default.png" alt="">
+                            </div>
+                            <span>*支持flv、wmv、swf、rm、avi格式</span>
+                        </div>
+                        <button>删除</button>
+                    </div>
+                </div>
+
+                <!-- 机构介绍 -->
+                <div class="introduce clearfix">
+                    <h4>机构介绍</h4>
+                    <textarea placeholder="用简短的语言描述一下你的机构"></textarea>
+                    <div>
+                        <span>(0</span>
+                        <span>/20)</span>
+                    </div>
+                </div>
+
+                <div class="ins-class clearfix">
+                    <div class="append">
+                        <p>机构课程类型选择</p>
+                        <ul>
+                            <li>
+                                艺术培训类
+                            </li>
+                            <li>
+                                学业辅导类
+                            </li>
+                            <li>
+                                语言培训类
+                            </li>
+                        </ul>
+                    </div>
+                    <button>添加</button>
+                </div>
+
+                <div class="class-age">
+                    <label for="">课程使用年龄段</label>
+                    <input type="text">
+                    <button>添加</button>
+                </div>
+                <!-- 备注信息 -->
+                <div class="introduce clearfix">
+                    <h4>备注信息</h4>
+                    <textarea placeholder="编辑备注信息"></textarea>
+                </div>
+
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-yes" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn-no">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../lay/less.js"></script>
+    <script src="../../layui.js"></script>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../js/user-control/showOrhide.js"></script>
+    <script src="../../js/commont.js"></script>
+    <script src="../../js/institution/institution-info.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+        });     
+    </script>
+</body>
+
+</html>

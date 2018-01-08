@@ -1,0 +1,244 @@
+.institution-add{
+    width:100%;
+    background: white;
+    margin-left:0.15rem;
+    border:1px solid transparent;
+}
+label{
+    font-size: 0.18rem;
+}
+input{
+    width:3.86rem;
+    height:0.4rem;
+    border-radius: 0.04rem;
+    border:1px solid #ccc;
+    margin-left:0.1rem;
+}
+input::-webkit-input-placeholder{
+    font-size:0.16rem;
+    color: rgb(181,181,181);
+}
+.institution-add>.name{
+    padding-left:0.3rem;
+    padding-top:0.3rem;
+    float: none;
+    padding-bottom:0.3rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+select{
+    width:3rem;
+    height:0.4rem;
+    border: 1px solid #ccc;
+    margin-left:0.1rem;
+    border-radius: 0.04rem;
+    font-size:0.16rem;
+    color: rgb(181,181,181);
+}
+.name:last-child{
+    border: none;
+}
+.class-info>.info>h4{
+    font-size:0.18rem;
+    margin-left:0.3rem;
+    margin-top:0.3rem;
+    float: left;
+}
+.class-info>.info>button{
+    margin-top:0.3rem;
+    float: right;
+    width:1rem;
+    height: 0.4rem;
+    background: white;
+    color: #ff6600;
+    border:1px solid #ff6600;
+    border-radius: 0.04rem;
+    font-size:0.18rem;
+    margin-right: 1rem;
+}
+.class-info>.text>textarea{
+    width:10.36rem;
+    height: 1.5rem;
+    background:#f2f2f2;
+    margin-left:0.5rem;
+    margin-top:0.2rem;
+    padding-top:0.15rem;
+    padding-left:0.15rem;
+}
+.upPhoto{
+    padding-top:0.3rem;
+    padding-left:0.3rem;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom:0.3rem;
+}
+.upPhoto>h4{
+    float: left;
+    font-size:0.18rem;
+}
+.upPhoto>.photo{
+    width:3rem;
+    height:2rem;
+    background: #f2f2f2;
+    margin-left:1rem;
+    font-size:0.16rem;
+    text-align:center;
+    line-height:2rem;
+    float: left;
+}
+.upPhoto>.but{
+    float: right;
+    margin-right:0.8rem;
+    margin-top:1.5rem;
+}
+.upPhoto>.but>button{
+    width:1rem;
+    height:0.4rem;
+    border:1px solid rgb(107,123,246);
+    background:white;
+    border-radius: 0.04rem;
+    font-size:0.18rem;
+    color:rgb(107,123,246);
+}
+.upPhoto>.but>.hour{
+    margin-left:0.5rem;
+}
+.data{
+   padding-top: 0 !important;
+   padding-bottom:0.2rem;
+   padding-left:0.15rem !important;
+}
+.layui-inline>input{
+    width:1.5rem;
+}
+.layui-inline>span{
+    margin-left:0.2rem;
+    width:0!important;
+    margin-top:0.05rem;
+}
+.activity{
+    margin-left:0.3rem;
+}
+.activity>p{
+    float: left;
+    font-size:0.18rem;
+}
+.activity>.yon{
+    float: left;
+    margin-left:0.3rem;
+}
+.activity>.yon>.radio{
+    width:0.2rem;
+    height:0.2rem;
+    border-radius: 50%;
+    border:1px solid #ccc;
+    float: left;
+    margin-top:0.05rem;
+}
+.activity>.yon>span{
+    float: left;
+    margin-left:0.2rem;
+    font-size:0.16rem;
+    margin-top:0.05rem;
+}
+.hdsjd{
+    margin-top:0.3rem;
+    margin-left:0.15rem;
+}
+.hdsjd>.data>.layui-inline>span{
+    margin-right:0.3rem;
+    margin-left:0.2rem;
+}
+
+
+
+.information{
+    border: none;
+    padding-bottom: 0;
+}
+.information>.self-info{
+    margin-left:0.3rem;
+}
+.data{
+    padding-left: 0.3rem;
+    padding-top:0.1rem;
+    font-size: 0.18rem;
+}
+.self-info-left>label{
+    color: rgb(51,51,51);
+}
+.self-info-left>label>input{
+    margin-left:0.1rem;
+}
+.modal-footer{
+    display: flex;
+    justify-content: center;
+    height:2rem;
+    border: none;
+}
+.modal-footer>button{
+    margin-top:0.3rem;
+    width:1rem;
+    height:0.4rem;
+    border-radius: 0.04rem;
+    font-size: 0.18rem;
+}
+.box{
+    transition: all 2s;
+}
+.modal-footer>.btn-qx{
+    border:1px solid #ccc;
+    background: white;
+}
+.modal-footer>.btn-bc{
+    background:#6b7bf6;
+    border:none;
+    color:rgb(255,255,255);
+    margin-left:0.5rem;
+}
+.modal-footer>.btn-bc:hover{
+    background:#4d5fe3;
+}
+.modal-footer>.btn-bc:active{
+    background:#4656d2;
+}
+#box{
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom:0.3rem;
+}
+.input-box{
+    padding-left:0.3rem;
+    padding-top:0.3rem;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom:0.3rem;
+}
+.input-box>.name:first-child{
+    margin-right:1rem;
+}
+.input-box>.name:last-child{
+    display: none;
+}   
+#box-box{
+    display: none;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom:0.3rem;
+}
+.add{
+    margin-top: 1rem;
+}
+.class-name{
+    padding-top:0.3rem;
+    padding-left:0.3rem;
+    border-top: 1px solid #f2f2f2;
+}
+.class-name>.name{
+    margin-right:1rem;
+}
+.class-name>.data{
+    padding-top:0;
+   display: none;
+}
+#activity{
+    display: none;
+}
+#class-num{
+    display: none;
+}

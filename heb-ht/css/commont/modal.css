@@ -1,0 +1,79 @@
+.modal-content{
+    margin-top:2rem;
+    width:9rem;
+    margin-left:-1rem;
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal-header>.info{
+    display: flex;
+    justify-content: center;
+}
+.modal-header>.info>span{
+    width:0.3rem;
+    height:0.01rem;
+    background:rgb(107,123,246);
+    display:block;
+    float: left;
+    margin-top:0.07rem;
+}
+.modal-header>.info>h4{
+  color:rgb(107, 123, 246);
+  font-size:0.16rem;
+  float: left;
+  margin-left:0.1rem;
+  margin-right:0.1rem;
+}
+.jg-input{
+    border-bottom:1px solid #f2f2f2;
+    padding-bottom:0.05rem;
+}
+.jg-input:nth-child(2){
+    margin-top:0.1rem;
+}
+input::-webkit-input-placeholder{
+    text-align: center;
+}
+.jg-input:nth-child(3)>.self-info{
+    margin-left:0.15rem;
+}
+.jg-input>.self-info{
+    float: left; 
+    text-align: right;
+}
+.jg-input>.self-info:nth-child(2){
+    float: right;
+}
+.jg-input>.self-info>.self-info-left>label{
+    font-size:0.16rem;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+}
+.jg-input>.self-info>.self-info-left>label>input{
+    width:3rem;
+    height:0.38rem;
+    border:1px solid #ccc;
+    margin-left:0.1rem;
+    padding-left:0.05rem;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer>.button{
+    width:0.6rem;
+    height: 0.3rem;
+    background: #6b7bf6;
+    border: none;
+    margin-left: 0;
+    border-radius: 4px;
+    color:rgb(255, 255, 255);
+    font-size:0.14rem;
+}
+.footer>.button:hover{
+    background: #4d5fe3;
+}
+.footer>.button:active{
+    background: #4656d2;
+}

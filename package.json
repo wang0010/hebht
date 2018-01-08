@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "art-template": "^4.12.2"
+  },
+  "devDependencies": {
+    "require": "^2.4.20"
+  }
+}

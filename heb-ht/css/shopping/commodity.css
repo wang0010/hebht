@@ -1,0 +1,24 @@
+input{
+    width:2.3rem;
+    margin-left:0.1rem;
+}
+.phone-name{
+    margin-left:0.3rem;
+    margin-top:0.2rem;
+}
+select{
+    width:2.3rem;
+    height:0.4rem;
+    border:1px solid #ccc;
+    border-radius: 0.04rem;
+    margin-left:0.1rem;
+}
+.input{
+    float: left;
+}
+.input+.input{
+    margin-left:2rem;
+}
+tbody>tr>td>a[data-cl]{
+    color:rgb(107,123,246);
+}

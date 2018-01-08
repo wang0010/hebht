@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>孩儿帮后台管理系统</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layui.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/commont/input.css">
+    <link rel="stylesheet" href="../../css/viewDetails/wallet.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <!-- 顶部导航栏 -->
+        <div class="layui-header">
+            <div class="layui-logo">
+                <a href="../../examples/index/index.html">
+                    <span class="logo"></span>
+                    孩儿帮管理平台
+                </a>
+            </div>
+            <ul class="layui-nav layui-layout-left list1">
+                <li class="layui-nav-item">
+                    <a href="../index/personage-info.html">个人信息</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../user-control/APP-user.html">账户管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../APP-admin/banner.html">APP管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../institution/institution-info.html">机构管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../by-stages/byStages-class.html">分期业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../shopping/commodity.html">商城管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../supplier/supplier.html">供货商管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../share-benefit/share-benefit.html">分润管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../financial/financial.html">财务管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../bazaar/bazaar-info.html">市场业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">权限设置</a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right list">
+                <li>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧 侧边栏 -->
+        <div class="layui-side layui-bg-black clearfix">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item sss">
+                        <a class="" href="../index/personage-info.html">个人资料</a>
+                    </li>
+
+
+                    <li class="layui-nav-item sss">
+                        <a href="javascript:;">个人钱包</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="./my-deposit.html">我的提现</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="../list-chidren/my-bankCard.html">我的银行卡</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="layui-body clearfix">
+            <!-- 内容主体区域 -->
+            <div class="layui-body-top">
+                <!-- 主体顶部 中间 -->
+                <div class="middle">
+                    <div class="layui-tab" lay-filter="tabDemo" lay-allowClose="true">
+                        <!-- <ul class="layui-tab-title">
+                            <li class="layui-this" lay-id="1">标题1</li>
+                            <li lay-id="2">标题2</li>
+                            <li lay-id="3">标题3</li>
+                            <li lay-id="4">标题4</li>
+                            <li lay-id="5">标题5</li>
+                            <li lay-id="6">标题6</li>
+                            <li lay-id="7">标题7</li>
+                            <li lay-id="8">标题8</li>
+                            <li lay-id="9">标题9</li>
+                        </ul> -->
+                        <!-- <div class="layui-tab-content">
+                  <div class="layui-tab-item layui-show">1</div>
+                  <div class="layui-tab-item">2</div>
+                  <div class="layui-tab-item">3</div>
+                  <div class="layui-tab-item">4</div>
+                  <div class="layui-tab-item">5</div>
+                </div> -->
+                    </div>
+                </div>
+                <!-- 主体顶部  左侧  -->
+                <div class="left clearfix">
+                    <div class="left-arrows">
+                        <span class="arrows arrows-left">
+                            <img src="../../images/web/home_left_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">首页
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 主体顶部 右侧 -->
+                <div class="right clearfix">
+                    <div class="left-arrows arrows-right">
+                        <span class="arrows">
+                            <img src="../../images/web/home_right_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">关闭操作
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 对应内容 信息 -->
+            <div class="silde-info">
+                <h4>待处理消息</h4>
+                <span>
+                    <img src="../../images/web/home_next_default.png" alt="">
+                </span>
+            </div>
+
+            <div class="wallet clearfix">
+                <div class="withdraw-deposit clearfix">
+                    <h4>我的余额</h4>
+                    <div class="money">￥21.00</div>
+                    <button>
+                        <a href="../list-chidren/balance.html">申请提现</a>
+                    </button>
+                </div>
+
+                <!-- 列表详情 -->
+                <div class="list-info clearfix">
+                    <div class="dispose clearfix">
+                        处理状态
+                        <select name="" id="">
+                            <option value="0">全部</option>
+                            <option value="1">支出</option>
+                            <option value="2">收入</option>
+                        </select>
+                    </div>
+                    <div class="dispose clearfix">
+                        收入来源
+                        <select name="" id="">
+                            <option value="0">全部</option>
+                            <option value="1">总分润</option>
+                            <option value="2">利息分润</option>
+                            <option value="3">商品分润</option>
+                        </select>
+                    </div>
+
+                    <div class="data">
+                        <span class="info-font">提现时间筛选</span>
+                        <div class="layui-inline">
+                            <input type="text" class="layui-input input1" id="test1">
+                            <span></span>
+                            <input type="text" class="layui-input input" id="test1" placeholder="选择截止日期">
+                        </div>
+                    </div>
+
+                    <div class="button clearfix">
+                        <button>查询</button>
+                    </div>
+                </div>
+                <table class="layui-table" lay-even lay-skin="row">
+                    <colgroup>
+                        <col width="300">
+                        <col width="300">
+                        <col width="300">
+                        <col width="500">
+                        <col width="300">
+                        <col width="500">
+                        <col width="300">
+                        <col width="300">
+                        <col width="300">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>明细类型</th>
+                            <th>金额</th>
+                            <th>收入来源</th>
+                            <th>时间</th>
+                            <th>支出类型</th>
+                            <th>更新时间</th>
+                            <th>目前余额</th>
+                            <th>操作</th>
+                            <th>备注</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>收入</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#">+21元</a>
+                            </td>
+                            <td>商品模块分润</td>
+                            <td>2017年10月01日 15:30</td>
+                            <td>无支出</td>
+                            <td>2017年10月01日 15:30</td>
+                            <td>21元</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#">查看详情</a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>支出</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#">-2000元</a>
+                            </td>
+                            <td>收入</td>
+                            <td>2017年10月01日 15:30</td>
+                            <td>提现</td>
+                            <td>2017年10月01日 15:30</td>
+                            <td>0.00元</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#">查看详情</a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="#"></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="exampleModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="info">
+                        <span></span>
+                        <h4>信息详情</h4>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="jg-input clearfix">
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">明细类型
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">时间
+                                    <input type="text">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">金额
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">到账时间
+                                    <input type="text">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jg-input clearfix">
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">收入来源
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">支出类型
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">银行
+                                    <input type="text">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">用户昵称
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">提现卡号
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">银行支行
+                                    <input type="text">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jg-input clearfix">
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">目前余额
+                                    <input type="text">
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer footer">
+                        <button type="button" class="button" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../layui.js"></script>
+        <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../js/index.js"></script>
+        <script>
+            //JavaScript代码区域
+            layui.use('element', function () {
+                var element = layui.element;
+
+            });
+        </script>
+</body>
+
+</html>

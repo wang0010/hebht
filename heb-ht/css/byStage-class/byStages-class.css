@@ -1,0 +1,171 @@
+.byStages-class{
+    width:100%;
+    height:100%;
+    background: white;
+    margin-left:0.15rem;
+    border:1px solid transparent;
+}
+select{
+    width:2rem !important;
+}
+.footer-all{
+    float: right;
+    margin-right:0.5rem;
+}
+.footer-all>button{
+    width:1rem;
+    height:0.4rem;
+    border-radius:4px;
+    font-size:0.18rem;
+}
+.btn-yes{
+   background: #6b7bf6;
+   border:none;
+}
+.btn-yes:hover{
+    background:#4d5fe3;
+}
+.btn-no{
+    border:1px solid #ccc;
+    background:white;
+    margin-right:0.5rem;
+}
+.btn-yes:active{
+    background:#4656d2;
+}
+.btn-yes>a{
+    color: rgb(255,255,255);
+}
+.layui-table td, .layui-table th{
+    font-size: 0.14rem;
+}
+tbody>tr>td>a[data-co]{
+    color: rgb(107,123,246);
+}
+.toUp>.self-info>.iDNumber>.pro{
+    float: left;
+    margin-right:1rem;
+}
+.toUp>.self-info>.iDNumber>.con{
+    float: left;
+}
+.toUp{
+    border:0;
+}
+.maodal-small{
+    margin-top:2rem;
+    width:600px;
+    margin-left:-1rem;
+}
+.maodal-small>h4{
+    font-size:0.18rem;
+    line-height:0.5rem;
+    padding-left:0.15rem;
+    background:#f2f2f2;
+}
+.maodal-small input{
+    background: #f2f2f2;
+    text-align: center;
+}
+.maodal-small>.title{
+    margin-top:0.3rem;
+    border-bottom:1px solid #f2f2f2;
+    padding-bottom:0.3rem;
+}
+.maodal-small>.title>.logo1{
+    float: left;
+    margin-right:0.1rem;
+    margin-left:0.2rem;
+}
+.modal-content>.title>span{
+    float: left;
+    line-height:0.5rem;
+    font-size:0.16rem;
+}
+.fzr:first-child{
+    margin-left:0.16rem;
+}
+input{
+    width:2rem;
+    height:0.4rem;
+    border:1px solid #ccc;
+    margin-left:0.1rem;
+}
+.jg-info{
+    margin-left:0.2rem;
+    margin-top:0.3rem;
+    margin-bottom: 0.3rem;
+}
+.top+.top{
+    margin-top:0.2rem;
+}
+.input1{
+    margin-left:0.3rem;
+}
+.jgdz>input{
+    width:3rem;
+}
+.line{
+    width:100%;
+    height:1px;
+    background: #f2f2f2;    
+}
+.modal-foot{
+    border-top-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+.btn-res{
+    width:0.6rem;
+    height:0.3rem;
+    background: white;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+/* 查看账期详情弹出框 */
+.modal-big{
+    width:10.80rem;
+    margin-top:2rem;
+}
+.modal-big>h4{
+    line-height:50px;
+    background:#f2f2f2;
+    padding-left:0.15rem;
+    font-size:0.18rem;
+}
+.modal-big>.status>.data>select{
+    height:0.4rem;
+    border-radius: 0.04rem;
+}
+.modal-big>.status>.footer-all>button{
+    width:0.6rem;
+    height:0.3rem;
+    font-size:0.14rem;
+}
+.modal-big>.status>.footer-all>.btn-no{
+    margin-right: 0;
+}
+.modal-big>.status>.footer-all>.btn-yes{
+    margin-left:0.3rem;
+}
+.modal-big>table{
+    margin-bottom:0.3rem;
+}
+.modal-big>.modal-footer>.info{
+     float: left;
+     font-size:0.18rem;
+     margin-top:0.05rem;
+}
+.modal-big>.modal-footer>.info>p{
+    float: left;
+    margin-right:0.1rem;
+}
+.modal-big>.modal-footer>.info>span{
+    color: #ff6600;
+}

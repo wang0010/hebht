@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>孩儿帮后台管理系统</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layui.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/commont/input.css">
+    <link rel="stylesheet" href="../../css/commont/small-modal.css">
+    <link rel="stylesheet" href="../../css/user-control/institution-list.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <!-- 顶部导航栏 -->
+        <div class="layui-header">
+            <div class="layui-logo">
+                <a href="../../examples/index/index.html">
+                    <span class="logo"></span>
+                    孩儿帮管理平台
+                </a>
+            </div>
+            <ul class="layui-nav layui-layout-left list1">
+                <li class="layui-nav-item">
+                    <a href="../index/personage-info.html">个人信息</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../user-control/APP-user.html">账户管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../APP-admin/banner.html">APP管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../institution/institution-info.html">机构管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../by-stages/byStages-class.html">分期业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../shopping/commodity.html">商城管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../supplier/supplier.html">供货商管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../share-benefit/share-benefit.html">分润管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../financial/financial.html">财务管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../bazaar/bazaar-info.html">市场业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">权限设置</a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right list">
+                <li>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧 侧边栏 -->
+        <div class="layui-side layui-bg-black clearfix">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item sss">
+                        <a class="" href="./APP-user.html">APP用户</a>
+                    </li>
+
+
+                    <li class="layui-nav-item sss">
+                        <a href="javascript:;">机构列表</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="./class-list.html">课程列表</a>
+                            </dd>
+                            <dd>
+                                <a href="./teacher-list.html">老师列表</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./business-list.html">业务员列表</a>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./supplier.html">供货商管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="layui-body clearfix">
+            <!-- 内容主体区域 -->
+            <div class="layui-body-top">
+                <!-- 主体顶部 中间 -->
+                <div class="middle">
+                    <div class="layui-tab" lay-filter="tabDemo" lay-allowClose="true">
+                        <!-- <ul class="layui-tab-title">
+                            <li class="layui-this" lay-id="1">标题1</li>
+                            <li lay-id="2">标题2</li>
+                            <li lay-id="3">标题3</li>
+                            <li lay-id="4">标题4</li>
+                            <li lay-id="5">标题5</li>
+                            <li lay-id="6">标题6</li>
+                            <li lay-id="7">标题7</li>
+                            <li lay-id="8">标题8</li>
+                            <li lay-id="9">标题9</li>
+                        </ul> -->
+                        <!-- <div class="layui-tab-content">
+                  <div class="layui-tab-item layui-show">1</div>
+                  <div class="layui-tab-item">2</div>
+                  <div class="layui-tab-item">3</div>
+                  <div class="layui-tab-item">4</div>
+                  <div class="layui-tab-item">5</div>
+                </div> -->
+                    </div>
+                </div>
+                <!-- 主体顶部  左侧  -->
+                <div class="left clearfix">
+                    <div class="left-arrows">
+                        <span class="arrows arrows-left">
+                            <img src="../../images/web/home_left_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">首页
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 主体顶部 右侧 -->
+                <div class="right clearfix">
+                    <div class="left-arrows arrows-right">
+                        <span class="arrows">
+                            <img src="../../images/web/home_right_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">关闭操作
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 对应内容 信息 -->
+            <div class="silde-info">
+                <h4>待处理消息</h4>
+                <span>
+                    <img src="../../images/web/home_next_default.png" alt="">
+                </span>
+            </div>
+
+
+            <!-- 我的银行卡 -->
+            <div class="institution-list">
+                <div class="APP-user-input clearfix">
+                    <div class="name">
+                        <label for="">机构名</label>
+                        <input type="text" placeholder="史少楠">
+                    </div>
+                    <div class="name">
+                        <label for="">隶属机构</label>
+                        <input type="text" placeholder="15097927270">
+                    </div>
+                    <div class="name">
+                        <label for="">负责人</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="status clearfix">
+                    <div class="data clearfix">
+                        创建时间筛选
+                        <div class="layui-inline">
+                            <input type="text" class="layui-input input1" id="test1">
+                            <span></span>
+                            <input type="text" class="layui-input input" id="test1" placeholder="选择截止日期">
+                        </div>
+                    </div>
+                    <div class="status-rz">
+                        <label for="">地址查询</label>
+                        <input type="text">
+                    </div>
+                    <div class="but" data-csId="{{$value.id}}">
+                        <button class="btn-charAt">查询</button>
+                    </div>
+                </div>
+                <table class="layui-table clearfix" lay-even lay-skin="row">
+                    <colgroup>
+                        <col width="750">
+                        <col width="700">
+                        <col width="700">
+                        <col width="600">
+                        <col width="550">
+                        <col width="400">
+                        <col width="300">
+                        <col width="300">
+                        <col width="600">
+                        <col width="300">
+                        <col width="250">
+                        <col width="800">
+                        <col width="800">
+                        <col width="300">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>机构名称</th>
+                            <th>省份</th>
+                            <th>市</th>
+                            <th>区/县</th>
+                            <th>地址</th>
+                            <th>负责人</th>
+                            <th>座机</th>
+                            <th>手机号</th>
+                            <th>隶属机构</th>
+                            <th>总部电话</th>
+                            <th>推荐码</th>
+                            <th>创建时间</th>
+                            <th>创建时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listInfo">
+                        <!-- <tr>
+                            <td>
+                                <a href="./ins-lisAdd.html">北京牙牙学语语言培训机构</a>
+                            </td>
+                            <td>北京</td>
+                            <td>北京</td>
+                            <td>大兴区</td>
+                            <td>科创四街中国梦谷</td>
+                            <td>李冰冰</td>
+                            <td>010-12345678</td>
+                            <td>15097927270</td>
+                            <td>七彩魔豆</td>
+                            <td>010-12345678</td>
+                            <td>132456465</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="" data-toggle="modal" data-target=".bs-example-modal-sm">删除</a>
+                            </td>
+                        </tr> -->
+
+                        <!-- todo -->
+                    </tbody>
+            </div>
+        </div>
+
+        <script type="text/template" id="listTpl">
+          {{each list}}
+            <tr>
+                <td>
+                    <a href="./ins-lisAdd.html">{{$value.subsidiary}}</a>
+                </td>
+                <td>{{$value.district}}</td>
+                <td>{{$value.district}}</td>
+                <td>{{$value.district}}</td>
+                <td>{{$value.address}}</td>
+                <td>{{$value.responsibilityName}}</td>
+                <td>{{$value.inviteCode}}</td>
+                <td>{{$value.hqMobile}}</td>
+                <td>{{$value.name}}</td>
+                <td>{{$value.inviteCode}}</td>
+                <td>{{$value.inviteCode}}</td>
+                <td>{{$value.createTime}}</td>
+                <td>{{$value.updateTime}}</td>
+                <td>
+                    <a href="" data-toggle="modal" data-target=".bs-example-modal-sm">删除</a>
+            </td>
+         </tr>
+          {{/each}}
+        </script>
+        <div class="modal fade bs-example-modal-sm">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">删除</h4>
+                    </div>
+                    <p>确定删除此信息吗</p>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn-no btn-res" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn-yes btn-res">确定</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="../../layui.js"></script>
+        <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../../node_modules/art-template/lib/template-web.js"></script>
+        <script src="../../js/commont.js"></script>
+        <script>
+            //JavaScript代码区域
+            layui.use('element', function () {
+                var element = layui.element;
+
+            });
+
+            $.ajax({
+                url: url + "institution_queryInstitutionManageList.do",
+                dataType: "jsonp",
+                jsonp: "jsonpCallback",
+                success: function (data) {
+                    console.log(data.data.lstInstitution)
+                    var html = template("listTpl", { list: data.data.lstInstitution });
+                    $("#listInfo").html(html)
+                }
+            })
+        </script>
+</body>
+
+</html>

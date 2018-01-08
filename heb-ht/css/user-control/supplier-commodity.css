@@ -1,0 +1,152 @@
+.supplier-commodity{
+    width:100%;
+    /* height:16rem; */
+    background: white;
+    margin-left:0.15rem;
+    border:1px solid transparent;
+}
+.information{
+    padding-bottom:0.3rem;
+}
+.information[data-las]{
+    position: relative;
+}
+input{
+    margin-left:0.1rem !important;
+}
+input[data-in]{
+    width:2.2rem;
+}
+select{
+    width:3.86rem;
+    height:0.4rem;
+    margin-left:0.3rem;
+    border-radius: 4px;
+    padding-left:1.6rem;
+    color: rgb(51,51,51);
+}
+button[data-btn]{
+    width:1rem;
+    height:0.4rem;
+    background: white;
+    color: #ff6600;
+    border:1px solid #ff6600;
+    border-radius: 4px;
+    font-size: 0.18rem;
+    position: absolute;
+    top:0.18rem;
+    right:1rem;
+}
+.self-info[data-las]{
+    margin-right: 0 !important;
+}
+.self-info-right[data-las]{
+    margin-left:1.5rem;
+}
+.commodity>h4{
+    font-size:0.18rem;
+    margin-left:0.3rem;
+    margin-top:0.3rem;
+}
+.commodity-list{
+    margin-top:0.3rem;
+    margin-left:0.3rem;
+}
+.commodity-list{
+    position: relative;
+}
+.commodity-list>p{
+    float: left;
+    font-size:0.16rem;
+    margin-right:0.3rem;
+}
+.commodity-list>.photo>img{
+    margin-top:0.05rem;
+}
+.commodity-list>.photo>span{
+    position: absolute;
+    background: url("../../images/web/delete_default.png")  0 0/0.19rem 0.19rem;
+    width:0.19rem;
+    height:0.19rem; 
+    top: 0;
+    left:2.1rem;
+}
+.commodity-list>.photo>i{
+    position: absolute;
+    background: url("../../images/web/delete_default.png") 0 0/0.19rem 0.19rem;
+    width:0.19rem;
+    height:0.19rem;
+    top: 0;
+    left:2.9rem;
+}
+.commodity-info>h4{
+    font-size:0.18rem;
+    margin-left:0.3rem;
+    margin-top:0.3rem;
+}
+.commodity-info>textarea{
+    width:10.36rem;
+    height:1.58rem;
+    background:#f2f2f2;
+    margin-left:1.5rem;
+    margin-top:0.2rem;
+    padding-left:0.15rem;
+    padding-top:0.15rem;
+}
+.footer{
+    margin-top:0.5rem;
+}
+.footer>.btn-yes{
+    color:rgb(255,255,255);
+}
+.price-box>.price{
+    float: left;
+    
+}
+.price-box{
+    margin-left:0.7rem;
+    margin-top:0.24rem;
+}
+.price-box>.price+.price{
+    margin-left:0.8rem;
+}
+.price-box>.price>input{
+    width:1.5rem;
+}
+.commodity-box{
+    margin-left:0.7rem;
+    margin-top:0.15rem;
+}
+.commodity-box>.commodity{
+    float: left;
+}
+.commodity-box>.commodity+.commodity{
+    margin-left:0.8rem;
+}
+.commodity-box>.commodity>input{
+    width:2rem;
+}
+.information[data-dis]{
+    display: none;
+}
+select{
+    margin-left:0.1rem;
+}
+#last{
+    position: relative;
+}
+#append{
+    position: relative;
+    /* display: none; */
+}
+section{
+    border-color:#ccc;
+}
+.footer{
+    height:2rem;
+}
+
+.information:nth-child(2){
+    padding-top:0.2rem;
+    padding-bottom:0.5rem !important;
+}

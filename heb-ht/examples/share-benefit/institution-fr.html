@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>孩儿帮后台管理系统</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layui.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/commont/input.css">
+    <link rel="stylesheet" href="../../css/share-benefit/bazaar.css">
+    <style>
+        .institution {
+            width: 100%;
+            background: white;
+            border: 1px solid transparent;
+            margin-left: 0.15rem;
+        }
+
+        input {
+            width: 1.85rem;
+            height: 0.4rem;
+            border: 1px solid #ccc;
+            border-radius: 0.04rem;
+            margin-left: 0.1rem;
+        }
+
+        .box {
+            height: 2rem;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 0.8rem;
+        }
+    </style>
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <!-- 顶部导航栏 -->
+        <div class="layui-header">
+            <div class="layui-logo">
+                <a href="../../examples/index.html">
+                    <span class="logo"></span>
+                    孩儿帮管理平台
+                </a>
+            </div>
+            <ul class="layui-nav layui-layout-left list1">
+                <li class="layui-nav-item">
+                    <a href="../index/personage-info.html">个人信息</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../user-control/APP-user.html">账户管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../APP-admin/banner.html">APP管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../institution/institution-info.html">机构管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../by-stages/byStages-class.html">分期业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../shopping/commodity.html">商城管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../supplier/supplier.html">供货商管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./share-benefit.html">分润管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../financial/financial.html">财务管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../bazaar/bazaar-info.html">市场业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">权限设置</a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right list">
+                <li>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧 侧边栏 -->
+        <div class="layui-side layui-bg-black clearfix">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item sss">
+                        <a href="./share-benefit.html">分润管理</a>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./platform.html">平台分润记录</a>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./bazaar.html">市场人员分润记录</a>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./institution-fr.html">机构分润记录</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="layui-body clearfix">
+            <!-- 内容主体区域 -->
+            <div class="layui-body-top">
+                <!-- 主体顶部 中间 -->
+                <div class="middle">
+                    <div class="layui-tab" lay-filter="tabDemo" lay-allowClose="true">
+                        <!-- <ul class="layui-tab-title">
+                            <li class="layui-this" lay-id="1">标题1</li>
+                            <li lay-id="2">标题2</li>
+                            <li lay-id="3">标题3</li>
+                            <li lay-id="4">标题4</li>
+                            <li lay-id="5">标题5</li>
+                            <li lay-id="6">标题6</li>
+                            <li lay-id="7">标题7</li>
+                            <li lay-id="8">标题8</li>
+                            <li lay-id="9">标题9</li>
+                        </ul> -->
+                        <!-- <div class="layui-tab-content">
+                  <div class="layui-tab-item layui-show">1</div>
+                  <div class="layui-tab-item">2</div>
+                  <div class="layui-tab-item">3</div>
+                  <div class="layui-tab-item">4</div>
+                  <div class="layui-tab-item">5</div>
+                </div> -->
+                    </div>
+                </div>
+                <!-- 主体顶部  左侧  -->
+                <div class="left clearfix">
+                    <div class="left-arrows">
+                        <span class="arrows arrows-left">
+                            <img src="../../images/web/home_left_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">首页
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 主体顶部 右侧 -->
+                <div class="right clearfix">
+                    <div class="left-arrows arrows-right">
+                        <span class="arrows">
+                            <img src="../../images/web/home_right_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">关闭操作
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 对应内容 信息 -->
+            <div class="silde-info">
+                <h4>待处理消息</h4>
+                <span>
+                    <img src="../../images/web/home_next_default.png" alt="">
+                </span>
+            </div>
+            <div class="institution">
+                <div class="status clearfix">
+                    <div class="status-rz">
+                        <label for="">机构名</label>
+                        <input type="text">
+                    </div>
+                    <div class="data">
+                        创建时间筛选
+                        <div class="layui-inline">
+                            <input type="text" class=" input1" id="test1">
+                            <span></span>
+                            <input type="text" class="input" id="test1" placeholder="选择截止日期">
+                        </div>
+                    </div>
+                </div>
+                <div class="status clearfix">
+                    <div class="status-rz">
+                        <label for="">手机号</label>
+                        <input type="text">
+                    </div>
+                    <div class="footer-all">
+                        <button class="btn-charAt">查询</button>
+                    </div>
+                </div>
+                <table class="layui-table clearfix" lay-even lay-skin="row">
+                    <colgroup>
+                        <col width="500">
+                        <col width="500">
+                        <col width="500">
+                        <col width="500">
+                        <col width="500">
+                        <col width="500">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>机构名</th>
+                            <th>机构负责人</th>
+                            <th>负责人联系方式</th>
+                            <th>分润总金额</th>
+                            <th>更新时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>北京牙牙学语语言培训机构</td>
+                            <td>
+                                史少楠
+                            </td>
+                            <td>
+                                15296707926
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg">12000.00元</a>
+                            </td>
+                            <td>
+                                2017-10-10 10:12
+                            </td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-lg"> 查看分润明细</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="box"></div>
+            </div>
+
+            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <h4>分润明细</h4>
+                        <table class="layui-table clearfix" lay-even lay-skin="row">
+                            <colgroup>
+                                <col width="500">
+                                <col width="500">
+                                <col width="500">
+                                <col width="500">
+                                <col width="500">
+                                <col width="500">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>订单号</th>
+                                    <th>分润人</th>
+                                    <th>分润金额</th>
+                                    <th>分润比例</th>
+                                    <th>更新时间</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>20170321220307485040</td>
+                                    <td>
+                                        史少楠
+                                    </td>
+                                    <td>
+                                        6.3
+                                    </td>
+                                    <td>
+                                        3%
+                                    </td>
+                                    <td>
+                                        2017-10-10 10:12
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-close" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="../../layui.js"></script>
+            <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script>
+                //JavaScript代码区域
+                layui.use('element', function () {
+                    var element = layui.element;
+
+                });
+            </script>
+</body>
+
+</html>

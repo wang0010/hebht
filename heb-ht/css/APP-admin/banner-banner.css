@@ -1,0 +1,174 @@
+.banner {
+    width: 100%;
+    background: white;
+    border: 1px solid transparent;
+    margin-left: 0.15rem;
+    height: 100%;
+}
+
+label {
+    font-size: 0.16rem;
+}
+
+.banner>.banner-classify {
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.banner>.banner-classify>select {
+    width: 1.5rem;
+    height: 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.15rem;
+}
+
+.banner>.banner-classify>select>option {
+    font-size: 0.16rem;
+}
+
+.banner-photo {
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.banner-photo>h4 {
+    font-size: 0.16rem;
+}
+
+.banner-photo>.banner-list {
+    margin-left: 1.1rem;
+    margin-top: -0.1rem;
+    position: absolute;
+}
+
+.banner-photo {
+    width: 800px;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-photo>.banner-list>ul>li {
+    float: left;
+}
+
+.banner-photo>.banner-list>ul>li+li {
+    margin-left: 0.2rem;
+}
+
+.banner-photo>.banner-list>ul+ul {
+    margin-top: 0.2rem;
+}
+
+.scrollbox {
+    height: 220px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: #f2f2f2;
+}
+
+.bar {
+    width: 10px;
+    background: #6b7bf6;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+
+.relevance {
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    position: relative;
+}
+
+.relevance>input {
+    margin-left: 0.15rem;
+    padding-left: 0.15rem;
+    width: 3rem;
+}
+
+.relevance>input::-webkit-input-placeholder {
+    font-size: 0.16rem;
+    color: rgb(102, 102, 102);
+}
+
+.relevance>span {
+    background: url("../../images/web/search-banner_default.png") 0 0/0.2rem 0.2rem;
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 4.2rem;
+    cursor: pointer;
+}
+
+.yon {
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    position: relative;
+}
+
+.yon>span {
+    font-size: 0.16rem;
+}
+
+.yon>span:first-child {
+    margin-right: 0.6rem;
+}
+
+.yon>span:nth-child(2) {
+    margin-right: 0.6rem;
+}
+
+.yon>span>i {
+    background: url("../../images/web/854857640923165682.png") 0 0/0.16rem 0.16rem;
+    width: 0.16rem;
+    height: 0.16rem;
+    position: absolute;
+    top: 0.04rem;
+    cursor: pointer;
+}
+
+.yon>span:nth-child(2)>i {
+    left: 1.05rem;
+}
+
+.yon>span:nth-child(3)>i {
+    left: 1.79rem;
+}
+
+.yon>span>i:hover {
+    background: url("../../images/web/naneer_yes_stop.png");
+}
+
+.info-r {
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.info-r>h4 {
+    font-size: 0.16rem;
+}
+
+.info-r>textarea {
+    width: 10.36rem;
+    height: 1.5rem;
+    background: #f2f2f2;
+    margin-left: 0.9rem;
+    margin-top: 0.3rem;
+    padding-top: 0.15rem;
+    padding-left: 0.15rem;
+}
+
+.info-r>textarea::-webkit-input-placeholder {
+    font-size: 0.16rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    float: none;
+    margin-top: 1rem;
+}

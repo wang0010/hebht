@@ -1,0 +1,25 @@
+
+.toUp>.self-info>.iDNumber>.pro{
+    float: left;
+    margin-right:1rem;
+}
+.toUp>.self-info>.iDNumber>.con{
+    float: left;
+}
+.information:nth-child(2){
+    padding-top:0.2rem;
+    padding-bottom:0.5rem !important;
+}
+.toUp{
+    border:0;
+}
+.pro{
+    float: left;
+    margin-right:0.5rem;
+}
+.con{
+    float: left;
+}
+.boxx{
+    height:1rem;
+}

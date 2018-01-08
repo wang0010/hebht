@@ -1,0 +1,63 @@
+.dispose {
+    font-size: 0.16rem;
+}
+
+.dispose>select {
+    width: 1.5rem;
+    height: 0.4rem;
+    border-radius: 0.04rem;
+    margin-top: 0.2rem;
+    margin-left: 0.1rem;
+}
+.bh{
+    float: left;
+    margin-top:0.2rem;
+}
+.bh>input{
+    width:1.5rem;
+    height:0.4rem;
+    border:1px solid #ccc;
+    border-radius: 0.04rem;
+    margin-right:1rem;
+    margin-left:0.1rem;
+}
+.wallet {
+    height: 100%;
+}
+
+.modal-content {
+    width: 8rem;
+    margin-left: -2rem;
+}
+
+.modal-content>h4 {
+    line-height: 0.4rem;
+    background: #f2f2f2;
+    padding-left: 0.15rem;
+    font-size: 0.18rem;
+}
+
+.modal-content input {
+    width: 2.35rem;
+    background: #f2f2f2;
+}
+
+.modal-content>.information>.self-info {
+    margin-right: 0 !important;
+    margin-left: 0.15rem;
+}
+
+.modal-content>.information>.self-info-right {
+    margin-left: 0.5rem;
+}
+.modal-content>.modal-footer{
+    border: none;
+}
+.modal-footer>.btn-no{
+    width:0.6rem;
+    height:0.3rem;
+    background: white;
+    border-radius: 0.04rem;
+    border:1px solid #ccc;
+    font-size:0.14rem;
+}

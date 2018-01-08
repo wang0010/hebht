@@ -1,0 +1,35 @@
+.phone-name{
+    margin-left:0.3rem;
+    margin-top:0.2rem;
+}
+.phone-name>form>.input{
+    float: left;
+}
+.phone-name>form>.input+.input{
+    margin-left:1rem;
+}
+input{
+    margin-left:0.1rem;
+}
+.phone-name>form>.input>select{
+    width:1.5rem;
+    height:0.4rem;
+    border:1px solid #ccc;
+    border-radius: 0.04rem;
+    font-size: 0.16rem;
+}
+.input-name{
+    margin-right:0;
+}
+.layui-table td, .layui-table th{
+    font-size:0.14rem;
+}
+.layui-table>thead>tr>th{
+    font-size:0.16rem !important;
+}
+tbody>tr>td:first-child>a{
+    color: rgb(107,123,246);
+}
+tbody>tr>td:last-child>a{
+    color: rgb(107,123,246);
+}

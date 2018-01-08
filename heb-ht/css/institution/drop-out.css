@@ -1,0 +1,112 @@
+.modal-big {
+    width: 10.80rem;
+    margin-top: 2rem;
+}
+
+.modal-big>h4 {
+    line-height: 50px;
+    background: #f2f2f2;
+    padding-left: 0.15rem;
+    font-size: 0.18rem;
+}
+
+.modal-big>.status>.data>select {
+    width: 1rem;
+    height: 0.4rem;
+}
+
+.modal-big>.status>.footer-all>button {
+    width: 0.6rem;
+    height: 0.3rem;
+    font-size: 0.14rem;
+}
+
+.modal-big>.status>.footer-all>.btn-no {
+    margin-right: 0;
+}
+
+.modal-big>.status>.footer-all>.btn-yes {
+    margin-left: 0.3rem;
+}
+
+.modal-big>table {
+    margin-bottom: 0.3rem;
+}
+
+.modal-big>.modal-footer>.info {
+    float: left;
+    font-size: 0.18rem;
+    margin-top: 0.05rem;
+}
+
+.modal-big>.modal-footer>.info>p {
+    float: left;
+    margin-right: 0.1rem;
+}
+
+.modal-big>.modal-footer>.info>span {
+    color: #ff6600;
+}
+
+.modal-big>.modal-footer>button {
+    width: 0.6rem;
+    height: 0.3rem;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 0.04rem;
+}
+
+.status>.footer-all {
+    float: left;
+    margin-left: 0.8rem;
+}
+
+.modal-big input {
+    height: 0.3rem;
+}
+
+.modal-big select {
+    height: 0.3rem !important;
+    border-radius: 0.04rem;
+}
+
+.status>.footer-all>button {
+    width: 1rem;
+    height: 0.4rem;
+    border-radius: 0.04rem;
+    font-size: 0.18rem;
+}
+
+.status>.footer-all>.btn-no {
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.status>.footer-all>.btn-yes {
+    background: #6b7bf6;
+    border: none;
+    color: white;
+}
+
+.status>.footer-all>.btn-yes:hover {
+    background: #4d5fe3;
+}
+
+.status>.footer-all>.btn-yes:active {
+    background: 4656d2;
+}
+
+input {
+    width: 1.95rem;
+    height: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 0.04rem;
+}
+
+.input-name {
+    float: left;
+}
+.my-bankCard>form>.footer{
+    float: right;
+    margin-right:0.8rem;
+}

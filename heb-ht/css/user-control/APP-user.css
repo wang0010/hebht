@@ -1,0 +1,86 @@
+.APP-user{
+    widows: 100%;
+    height:100%;
+    background:white;
+    margin-left:0.15rem;
+    border: 1px solid transparent;
+}
+.APP-user>.APP-user-input{
+    margin-left:0.3rem;
+    margin-top:0.3rem;
+}
+.APP-user>.APP-user-input>.name{
+    float: left;
+}
+.APP-user>.APP-user-input>.name+.name{
+    margin-left:1rem;
+}
+.APP-user>.APP-user-input>.name>input{
+    width:1.5rem;
+    height:0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.status{
+    margin-left:0.3rem;
+    margin-top:0.2rem;
+}
+.status>.status-rz{
+    float: left;
+    margin-right:1rem;
+}
+input{
+    margin-left:0.1rem;
+}
+input::-webkit-input-placeholder{
+    color: #333;
+    font-size:0.16rem;
+}
+.status>.status-rz>select{
+    width:1.5rem;
+    height:0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left:0.1rem;
+    font-size:0.16rem;
+}
+.status>.status-rz>select>option{
+    font-size:0.16rem;
+}
+label{
+    font-size:0.16rem;
+    font-weight: normal;
+}
+.btn-charAt{
+    float: right;
+    margin-right:1rem;
+    width:1rem;
+    height:0.4rem;
+    background: #6b7bf6;
+    border: none;
+    color: rgb(255,255,255);
+    font-size:0.18rem;
+    border-radius: 4px;
+}
+.btn-charAt:hover{
+    background:#4d5fe3;
+}
+.btn-charAt:active{
+    background:#4656d2;
+}
+table{
+    margin-right:0.1rem;
+}
+tbody>tr>td:nth-child(2)>a{
+    color:rgb(103,123,246);
+}
+tbody>tr>td:nth-child(11)>a{
+    color:rgb(103,123,246);
+}
+tbody>tr>td:nth-child(6)>a{
+    color:rgb(103,123,246);
+}
+tbody>tr>td:nth-child(4)>a,
+tbody>tr>td:nth-child(5)>a{
+    color:rgb(103,123,246);
+}

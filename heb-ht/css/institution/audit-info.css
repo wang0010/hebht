@@ -1,0 +1,109 @@
+
+.Ins-par-aud>.par-aud>h4{
+    font-size:0.18rem;
+    margin-top:0.3rem;
+    margin-left:0.3rem;
+    float: left;
+}
+.Ins-par-aud>.par-aud>.footer-all{
+    float: right;
+    margin-right:1rem;
+    margin-top:0.2rem;
+}
+.Ins-par-aud>.par-aud>.footer-all>button{
+    width:1rem;
+    height:0.4rem;
+    border-radius: 0.04rem;
+    font-size:0.18rem;
+}
+.Ins-par-aud>.par-aud>.footer-all>.btn-no{
+    background: white;
+    border:1px solid #ccc;
+}
+.Ins-par-aud>.par-aud>.footer-all>.btn-yes{
+    background: #6b7bf6;
+    border: none;
+    color: rgb(255,255,255);
+    margin-left:0.5rem;
+}
+.Ins-par-aud>.par-aud>.footer-all>.btn-yes:hover{
+    background:#4d5fe3;
+}
+.Ins-par-aud>.par-aud>.footer-all>.btn-yes:active{
+    background:#4656d2;
+}
+.Ins-par-aud>.img{
+    padding-bottom:0.3rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+.Ins-par-aud>.img>.img-box{
+    width:4.85rem;
+    height:3.1rem;
+    background: #f2f2f2;
+    margin-top:0.3rem;
+    margin-left:0.4rem;
+    font-size:0.5rem;
+    text-align:center;
+    line-height: 3.1rem;
+}
+.Ins-par-aud>.img>p{
+    margin-left:0.3rem;
+    color:#ff6600;
+    font-size:0.16rem;
+}
+.text>h4{
+    font-size:0.18rem;
+    margin-left:0.3rem;
+    margin-top:0.3rem;
+}
+.text>textarea{
+    width:10.36rem;
+    height:1.5rem;
+    background:#f2f2f2;
+    margin-left:1rem;
+    margin-top:0.2rem;
+}
+.footer-btn{
+    display: flex;
+    justify-content: center;
+    margin-top:0.8rem;
+    margin-left:-0.8rem;
+}
+.footer-btn>button{
+    width:1rem;
+    height:0.4rem;
+    font-size:0.18rem;
+    border-radius: 0.04rem;
+    margin-left:0.5rem;
+}
+.footer-btn>.btn-no{
+    border:1px solid #ccc;
+    background: white;
+}
+.footer-btn>.btn-not{
+    border:1px solid rgb(107,123,246);
+    color:rgb(107,123,246);
+    background:white;
+}
+.footer-btn>.btn-yes{
+    background:#6b7bf6;
+    border:none;
+    color:rgb(255,255,255);
+}
+.footer-btn>.btn-yes:hover{
+    background:#4d5fe3;
+}
+.footer-btn>.btn-yes:active{
+    background:#4656d2;
+}
+.box {
+    height: 2rem;
+}
+
+
+
+
+.information:nth-child(2){
+    padding-top:0.2rem;
+    padding-bottom:0.5rem !important;
+}

@@ -1,0 +1,52 @@
+.bazaar{
+    width: 100%;
+    background:white;
+    height: 100%;
+    margin-left:0.15rem;
+    border:1px solid transparent;
+}
+input{
+    width:2.3rem;
+    height:0.4rem;
+    border:1px solid #ccc;
+    border-radius: 0.04rem;
+    margin-left:0.1rem;
+}
+select{
+    width:2.3rem !important;
+}
+
+tbody>tr>td>a[data-cl]{
+    color: rgb(107,123,246);
+}
+
+.modal-content{
+    margin-top:2rem;
+}
+.modal-content>h4{
+    line-height:0.4rem;
+    background: #f2f2f2;
+    padding-left:0.15rem;
+    font-size:0.18rem;
+}
+.modal-footer{
+    display: flex;
+    justify-content: center;
+    margin-top:0.3rem;
+}
+.modal-footer>button{
+    width: 0.6rem;
+    height:0.3rem;
+    background: white;
+    border:1px solid #ccc;
+    font-size:0.14rem;
+    border-radius: 0.04rem;
+}
+.box{
+    height:2rem;
+}
+.pagination{
+   display: flex;
+   justify-content: center;
+   margin-top:0.5rem;
+}

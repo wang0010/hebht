@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>孩儿帮后台管理系统</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layui.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/commont/input.css">
+    <link rel="stylesheet" href="../../css/viewDetails/balance.css">
+</head>
+
+<body class="layui-layout-body">
+
+
+    <div class="box"></div>
+
+
+    <div class="layui-layout layui-layout-admin">
+        <!-- 顶部导航栏 -->
+        <div class="layui-header">
+            <div class="layui-logo">
+                <a href="../../examples/index.html">
+                    <span class="logo"></span>
+                    孩儿帮管理平台
+                </a>
+            </div>
+            <ul class="layui-nav layui-layout-left list1">
+                <li class="layui-nav-item">
+                    <a href="../personage-info.html">个人信息</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../user-control/APP-user.html">账户管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../APP-admin/banner.html">APP管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../institution/institution-info.html">机构管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../by-stages/byStages-class.html">分期业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../shopping/commodity.html">商城管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../supplier/supplier.html">供货商管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../share-benefit/share-benefit.html">分润管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../financial/financial.html">财务管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../bazaar/bazaar-info.html">市场业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">权限设置</a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right list">
+                <li>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧 侧边栏 -->
+        <div class="layui-side layui-bg-black clearfix">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item sss">
+                        <a class="" href="../personage-info.html">个人资料</a>
+                    </li>
+
+
+                    <li class="layui-nav-item sss">
+                        <a href="./wallet.html">个人钱包</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="javascript:;">列表二</a>
+                            </dd>
+                            <dd>
+                                <a href="">超链接</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./my-bankCard.html">我的银行卡</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="layui-body clearfix">
+            <!-- 内容主体区域 -->
+            <div class="layui-body-top">
+                <!-- 主体顶部 中间 -->
+                <div class="middle">
+                    <div class="layui-tab" lay-filter="tabDemo" lay-allowClose="true">
+                        <!-- <ul class="layui-tab-title">
+                            <li class="layui-this" lay-id="1">标题1</li>
+                            <li lay-id="2">标题2</li>
+                            <li lay-id="3">标题3</li>
+                            <li lay-id="4">标题4</li>
+                            <li lay-id="5">标题5</li>
+                            <li lay-id="6">标题6</li>
+                            <li lay-id="7">标题7</li>
+                            <li lay-id="8">标题8</li>
+                            <li lay-id="9">标题9</li>
+                        </ul> -->
+                        <!-- <div class="layui-tab-content">
+                  <div class="layui-tab-item layui-show">1</div>
+                  <div class="layui-tab-item">2</div>
+                  <div class="layui-tab-item">3</div>
+                  <div class="layui-tab-item">4</div>
+                  <div class="layui-tab-item">5</div>
+                </div> -->
+                    </div>
+                </div>
+                <!-- 主体顶部  左侧  -->
+                <div class="left clearfix">
+                    <div class="left-arrows">
+                        <span class="arrows arrows-left">
+                            <img src="../../images/web/home_left_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">首页
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 主体顶部 右侧 -->
+                <div class="right clearfix">
+                    <div class="left-arrows arrows-right">
+                        <span class="arrows">
+                            <img src="../../images/web/home_right_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">关闭操作
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 对应内容 信息 -->
+            <div class="silde-info">
+                <h4>待处理消息</h4>
+                <span>
+                    <img src="../../images/web/home_next_default.png" alt="">
+                </span>
+            </div>
+            <!-- 余额 -->
+
+            <div class="balance">
+                <div class="balance-module">
+                    <div class="balancr-info">
+                        <label for="">
+                            目前余额
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="balancr-info">
+                        <label for="">
+                            提现金额
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="balancr-info">
+                        <label for="">
+                            选择银行卡
+                            <input id="myModal" type="text">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <button class="btn-no">取消</button>
+                    <button class="btn-yes">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bs-example-modal-sm">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content content-two clearfix">
+                <h4>请选择银行卡</h4>
+
+                <div class="bank-card clearfix">
+                    <span>文志敏-民生银行-5227000895543152</span>
+                    <input type="checkbox">
+                </div>
+                <div class="bank-card clearfix">
+                    <span>文志敏-民生银行-5227000895543152</span>
+                    <input type="checkbox">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-res" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-ress">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../layui.js"></script>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../js/commont.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+
+        });
+        $(function () {
+            var md = document.querySelector("#myModal")
+            console.log(md)
+            md.onfocus = function () {
+                $(".bs-example-modal-sm ").modal("show")
+            }
+        })
+
+
+        $(".btn-yes").on("click", function () {
+            $.ajax({
+                url: url + "clientApplyWithdraw_agreeClientApplyWithdraw.do",
+                data: { applyId: 1 },
+                dataType: "jsonp",
+                jsonp: "jsonpCallback",
+                success: function (data) {
+                    if (data.code === -1) {
+                        alert("不存在该申请或已经通过申请");
+                    } else if (data.code === 1) {
+                        alert("审核成功");
+                    } else if (data.code === -2) {
+                        alert("余额不足，提现金额不能大于余额");
+                    } else if (data.code === 0) {
+                        alert("审核失败");
+                    }
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>

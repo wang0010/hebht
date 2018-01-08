@@ -1,0 +1,66 @@
+.modal-content{
+    margin-top:2rem;
+}
+.modal-content>.modal-header{
+    padding: 0;
+}
+.modal-content>.modal-header>h4{
+    font-size:0.2rem;
+    background:#f2f2f2;
+    line-height:0.5rem;
+    padding-left:0.2rem;
+}
+.input-name{
+    float: left;
+    margin-right:1rem;
+}
+.modal-content>.modal-header>.close{
+    margin-top:0.15rem;
+    margin-right:0.15rem;
+}
+.modal-content>p{
+    font-size:0.18rem;
+    color: rgb(51,51,51);
+    line-height:1rem;
+    text-align: center;
+}
+.modal-footer{
+    display: flex;
+    justify-content: center;
+    line-height:0.3rem;
+}
+.btn-res{
+    width:0.6rem;
+    height:0.3rem;
+    border-radius: 4px;
+}
+.footer{
+    float:right;
+    margin-right: 1rem;
+}
+.btn-no{
+    border: 1px solid #ccc;
+    background:white;
+}
+.btn-yes{
+    background:#6b7bf6;
+    border: none;
+    margin-left:0.5rem;
+    padding: 0;
+    color: rgb(255,255,255);
+    font-size:0.14rem;
+}
+.btn-yes:hover{
+    background:#4d5fe3;
+}
+.btn-yse:active{
+    background:#4656d2;
+}
+
+input{
+    width:1.5rem;
+    height: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}

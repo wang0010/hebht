@@ -1,0 +1,296 @@
+.course{
+    width:100%;
+    background: white;
+    border: 1px solid transparent;
+    margin-left:0.15rem;
+}
+/* 普通课程 */
+.course>.common-course{
+    margin-top:0.3rem;
+    margin-left:0.3rem;
+}
+.title{
+    font-size:0.18rem;
+    color: rgb(51,51,51);
+}
+.title>h4{
+    float: left;
+    margin-right:0.4rem;
+    margin-top:0.03rem;
+    font-weight: 600; 
+}
+.title>span{
+  font-weight: 600;
+}
+.common{
+    font-size: 0.18rem;
+    font-weight: 600;
+    margin-top:0.4rem;
+}
+label{
+    font-size:0.16rem;
+    color: rgb(102,102,102);
+}
+.class{
+    margin-top:0.4rem;
+    margin-bottom:0.24rem;
+}
+.class>.class-attr{
+    float: left;
+}
+.class>.class-attr>select{
+    width:3.98rem;
+    height:0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.16rem;
+    margin-left:0.3rem;
+    padding-left:1.55rem;;
+    margin-right:1.14rem;
+}
+.class>.class-name{
+    float: left;
+}
+.class>.class-name>input{
+    width:3.98rem;
+    height:0.4rem;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    margin-left:0.3rem;
+    padding-left:0.1rem
+}
+.class>.class-name>input::-webkit-input-placeholder{
+    text-align: center;
+    font-size:0.16rem;
+    color:rgb(51,51,51);
+}
+.add-class{
+    width:1.5rem;
+    height: 0.4rem;
+    border:1px solid rgb(107,123,246);
+    color: rgb(107,123,246);
+    background: white;
+    float: right;
+    border-radius: 4px;
+    font-size:0.18rem;
+    line-height:0.4rem;
+    text-align: center;
+    cursor: pointer;
+    margin-right:0.5rem;
+}
+table{
+    margin-right:0.5rem;
+}
+table>thead>tr,
+tbody>tr{
+    height:0.36rem !important;
+}
+.layui-table>thead>tr>th{
+    font-size:0.16rem !important;
+}
+tbody>tr>td:last-child>a:first-child{
+    color:rgb(107,123,246);
+}
+tbody>tr>td:last-child>a:last-child{
+    color:rgb(246,76,76);
+    margin-left: 0.3rem;
+}
+.info{
+    position: relative;
+}
+.info>h4{
+    font-size:0.16rem;
+    color: rgb(102,102,102);
+    margin-top:0.2rem;
+    margin-left:0.08rem;
+}
+.info>textarea{
+    width:11.32rem;
+    height:1.5rem;
+    background: #f2f2f2;
+    margin-top:0.14rem;
+    margin-left:1rem;
+    padding-left:0.15rem;
+    padding-top:0.15rem;
+}
+.info>textarea::-webkit-input-placeholder{
+    font-size:0.16rem;
+    color: rgb(187,187,187);
+}
+.info>div{
+    font-size:0.16rem;
+    color: rgb(187,187,187);
+    position: absolute;
+    top: 1.5rem;
+    right:4.5rem;
+}
+.modal-footer{
+    border:none;
+    margin-right:0.3rem;
+    margin-top:0.3rem;
+}
+.modal-footer>button{
+    width:1.1rem;
+    height: 0.4rem;
+    border-radius: 4px;
+    font-size:0.18rem;
+}
+.modal-footer>.btn-yes{
+    border:1px solid #ccc;
+    color:rgb(51,51,51);
+    background: white;
+}
+.modal-footer>.btn-no{
+    background:#6b7bf6;
+    border: none;
+    color: rgb(255,255,255);
+    margin-left: 0.4rem;
+}
+.modal-footer>.btn-no:hover{
+    background: #4d5fe3;
+}
+.modal-footer>.btn-no:active{
+    background:#4656d2;
+}
+.line{
+    width:100%;
+    height:0.05rem;
+    background: #e9ecf5;
+    margin-top:0.2rem;
+}
+
+.course>.activity-course{
+    margin-top:0.3rem;
+    margin-left:0.3rem;
+}
+.course>.activity-course>.common{
+    margin-top:0;
+}
+.line1{
+    width:100%;
+    height: 1px;
+    background: #f2f2f2;
+}
+.course>.activity-course>.modal-footer{
+    margin-bottom:0.2rem;
+}
+.course>.activity-course>.class>.class-attr>select{
+    width:2.8rem;
+    padding-left:1rem;
+}
+.course>.activity-course>.class>.class-name>input{
+    width:2.8rem;
+}
+.data{
+    margin-left:0.5rem;
+}
+.data>input{
+    width:2rem;
+    height:0.4rem;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    padding-left:0.15rem;
+}
+.data>span{
+    margin-left:0.05rem;
+    margin-right:0.05rem;
+}
+.input1{
+    margin-left:0.3rem;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top:1rem;
+    height:2rem;
+}
+.footer>.btn-yes{
+    border:1px solid #6b7bf6;
+    color: #6b7bf6;
+}
+.activity-course>.add-class{
+    margin-top:-0.3rem;
+}
+/* 课程周期 */
+input{
+    height:0.4rem;
+}
+.period{
+    float: left;
+}
+.period>input{
+    width:1rem;
+    border:1px solid #ccc;
+    margin-left:0.1rem;
+}
+.p-line{
+    width:0.3rem;
+    height:0.01rem;
+    background:#ccc;
+    float: left;
+    margin-left:0.1rem;
+    margin-right:0.1rem;
+    margin-top:0.195rem;
+}
+.class-period>#class-box>.data{
+    float: left;
+    margin-left:0 !important;
+}
+.class-period>#class-box>.data>input{
+  width:1rem;
+}
+.class-period>#class-box>.data>.input1{
+    margin-left:0.1rem;
+}
+.stipulate{
+    float: left;
+}
+.stipulate>input{
+    width:1rem;
+    border:1px solid #ccc;
+    margin-left:0.1rem;
+}
+.price{
+    float: left;
+}
+.price>input{
+    width:1rem;
+    border:1px solid #ccc;
+    margin-left:0.1rem;
+}
+.favour{
+    float: left;
+}
+.favour>input{
+    width:1rem;
+    margin-left:0.1rem;
+    border:1px solid #ccc;
+}
+#class-box{
+    margin-top:0.2rem;
+}
+#class-period{
+    display: none;
+}
+
+
+
+
+
+#class-box1{
+    margin-top:0.2rem;
+}
+.class-period>#class-box1>.data{
+    float: left;
+    margin-left:0 !important;
+}
+.class-period>#class-box1>.data>input{
+  width:1rem;
+}
+.class-period>#class-box1>.data>.input1{
+    margin-left:0.1rem;
+}
+
+#class-period1{
+    display: none;
+}

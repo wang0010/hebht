@@ -1,0 +1,161 @@
+
+.balance{
+    width:100%;
+    height:100%;
+    background:white;
+    margin-left:0.15rem;
+    border: 1px solid transparent;
+}
+.balance-module{
+    /* margin-top:3rem;
+    margin-left:5.9rem; */
+    margin:3rem auto 0;
+    width:350px;
+    height:200px;
+}
+.balance-module>.balancr-info>label{
+    font-size:0.18rem;
+    font-weight: normal;
+}
+.balance-module>.balancr-info>label>input{
+    width:2.6rem;
+    height: 0.38rem;
+    border:1px solid #ccc;
+    padding-left:0.05rem;
+    display: inline-block;
+    margin-left:0.1rem;
+}
+.balance-module>.balancr-info+.balancr-info{
+    margin-top:0.3rem;
+}
+.balance-module>.balancr-info:last-child{
+    margin-left:-0.18rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-left:0.3rem;
+}
+.footer>button{
+    width:1rem;
+    height:0.4rem;
+    text-align: center;
+    display:inline-block;
+    line-height:0.4rem;
+    margin-top:0.84rem;
+    border-radius:4px;
+}
+.btn-no{
+    background:white;
+    border:1px solid #ccc;
+    margin-right:0.34rem;
+}
+.btn-yes{
+    background:#6b7bf6;
+    border: none;
+}
+.btn-yes:hover{
+    background:#4d5fe3;
+}
+.btn-yes:active{
+    background:#4656d2;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer>.button{
+    width:0.6rem;
+    height: 0.3rem;
+    background: #6b7bf6;
+    border: none;
+    margin-left: 0;
+    border-radius: 4px;
+    color: rgb(255,255,255);
+}
+.footer>.button:hover{
+    background: #4d5fe3;
+}
+.footer>.button:active{
+    background: #4656d2;
+}
+
+.btn{
+    padding:0;
+    line-height:0.3rem;
+}
+.content-two{
+    width:470px;
+    margin-left:-1rem;
+}
+.content-two>h4{
+    text-align: center;
+    font-size:0.18rem;;
+    color: rgb(107, 123, 246);
+    margin-top:0.2rem;
+    padding-bottom:0.2rem;
+    border-bottom:1px solid #f2f2f2;
+}
+.bank-card{
+    padding-top:0.18rem;
+    padding-bottom:0.18rem;
+    border-bottom:1px solid #f2f2f2;
+}
+.bank-card>span{
+    float: left;
+    font-size:0.18rem;
+    color: rgb(51,51,51);
+    margin-left:0.2rem;
+}
+.bank-card>input{
+    border:1px solid #ccc;
+    width:0.14rem;
+    height:0.14rem;
+    float: right;
+    margin-right:0.2rem;
+    vertical-align: middle;
+    margin-top:0.05rem;
+}
+.content-two>.modal-footer{
+    border: none;
+    margin-top:0.8rem;
+    display: flex;
+    justify-content: center;
+}
+.content-two>.modal-footer>.btn-res{
+    margin-right:0.2rem;
+    color: rgb(102,102,102);
+}
+.content-two>.modal-footer>.btn{
+    width:0.6rem;
+    height:0.3rem;
+    font-size:0.14rem;
+}
+.content-two>.modal-footer>.btn-ress{
+    margin-left:0.4rem;
+    background:#6b7bf6;
+    color: rgb(255, 255, 255);
+}
+.content-two>.modal-footer>.btn-ress:hover{
+    background: #4d5fe3;
+}
+.btn-primary{
+    border-color: none;
+}
+.content-two>.modal-footer>.btn-ress:active{
+    background: #4656d2;
+}
+.modal-content{
+    margin-top:2rem;
+}
+.btn-res{
+    width:0.6rem;
+    height:0.3rem;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

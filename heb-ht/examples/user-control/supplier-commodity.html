@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>孩儿帮后台管理系统</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layui.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/commont/input.css">
+    <link rel="stylesheet" href="../../css/commont/info.css">
+    <link rel="stylesheet" href="../../css/user-control/supplier-commodity.css">
+
+
+    <style>
+        .photo {
+            float: left;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+
+<body class="layui-layout-body">
+
+
+    <div class="box"></div>
+
+
+    <div class="layui-layout layui-layout-admin">
+        <!-- 顶部导航栏 -->
+        <div class="layui-header">
+            <div class="layui-logo">
+                <a href="../../examples/index/index.html">
+                    <span class="logo"></span>
+                    孩儿帮管理平台
+                </a>
+            </div>
+            <ul class="layui-nav layui-layout-left list1">
+                <li class="layui-nav-item">
+                    <a href="../index/personage-info.html">个人信息</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../user-control/APP-user.html">账户管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../APP-admin/banner.html">APP管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../institution/institution-info.html">机构管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../by-stages/byStages-class.html">分期业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../shopping/commodity.html">商城管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../supplier/supplier.html">供货商管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../share-benefit/share-benefit.html">分润管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../financial/financial.html">财务管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../bazaar/bazaar-info.html">市场业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">权限设置</a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right list">
+                <li>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧 侧边栏 -->
+        <div class="layui-side layui-bg-black clearfix">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item sss">
+                        <a class="" href="javascript:;">APP用户</a>
+                    </li>
+
+
+                    <li class="layui-nav-item sss">
+                        <a href="javascript:;">机构列表</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="javascript:;">课程列表</a>
+                            </dd>
+                            <dd>
+                                <a href="./teacher-list.html">老师列表</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./business-list.html">业务员列表</a>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./supplier.html">供货商管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="layui-body clearfix">
+            <!-- 内容主体区域 -->
+            <div class="layui-body-top">
+                <!-- 主体顶部 中间 -->
+                <div class="middle">
+                    <div class="layui-tab" lay-filter="tabDemo" lay-allowClose="true">
+                        <!-- <ul class="layui-tab-title">
+                            <li class="layui-this" lay-id="1">标题1</li>
+                            <li lay-id="2">标题2</li>
+                            <li lay-id="3">标题3</li>
+                            <li lay-id="4">标题4</li>
+                            <li lay-id="5">标题5</li>
+                            <li lay-id="6">标题6</li>
+                            <li lay-id="7">标题7</li>
+                            <li lay-id="8">标题8</li>
+                            <li lay-id="9">标题9</li>
+                        </ul> -->
+                        <!-- <div class="layui-tab-content">
+                  <div class="layui-tab-item layui-show">1</div>
+                  <div class="layui-tab-item">2</div>
+                  <div class="layui-tab-item">3</div>
+                  <div class="layui-tab-item">4</div>
+                  <div class="layui-tab-item">5</div>
+                </div> -->
+                    </div>
+                </div>
+                <!-- 主体顶部  左侧  -->
+                <div class="left clearfix">
+                    <div class="left-arrows">
+                        <span class="arrows arrows-left">
+                            <img src="../../images/web/home_left_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">首页
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 主体顶部 右侧 -->
+                <div class="right clearfix">
+                    <div class="left-arrows arrows-right">
+                        <span class="arrows">
+                            <img src="../../images/web/home_right_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">关闭操作
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 对应内容 信息 -->
+            <div class="silde-info">
+                <h4>待处理消息</h4>
+                <span>
+                    <img src="../../images/web/home_next_default.png" alt="">
+                </span>
+            </div>
+            <!-- 商品信息 -->
+            <div class="supplier-commodity clearfix">
+                <div class="info-box">
+                    <div class="information clearfix">
+                        <h4>商品信息</h4>
+                        <span class="down"></span>
+                        <span class="upDown">收起</span>
+                        <div class="self-info first clearfix">
+                            <div class="self-info-left">
+                                <label for="">商品名称
+                                    <input type="text" placeholder="152****7926">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">所属供货商
+                                    <input type="text" placeholder="拉古斯">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">是否上架
+                                    <select name="" id="">
+                                        <option value="上架">上架</option>
+                                        <option value="下架">下架</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="self-info-right last clearfix">
+                            <div class="self-info-left">
+                                <label for="">品牌
+                                    <input type="text" placeholder="拉古斯">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">运费
+                                    <input type="text" placeholder="15097927270">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information clearfix">
+                        <span class="down"></span>
+                        <span class="upDown">收起</span>
+                        <div class="self-info first1 clearfix">
+                            <div class="self-info-left">
+                                <label for="">商品属性
+                                    <input type="text" placeholder="152****7926">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">实际销量
+                                    <select name="" id="commodity">
+                                        <option value="普通商品">普通商品</option>
+                                        <option value="兑换商品">兑换商品</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="self-info-right last1 clearfix" id="type">
+                            <div class="self-info-left">
+                                <label for="">商品分类
+                                    <select name="" id="">
+                                        <option value="儿童安全">儿童安全</option>
+                                        <option value="儿童饮食">儿童饮食</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">赠送学币量
+                                    <input type="text" placeholder="152****7926">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information clearfix" data-las="las" id="first">
+                        <h4>商品规格</h4>
+                        <button data-btn="btn">添加规格</button>
+                        <div class="self-info first2" data-las="las">
+                            <div class="self-info-left">
+                                <label for="">商品属性
+                                    <input data-in="in" type="text" placeholder="152****7926">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">商品属性
+                                    <input data-in="in" type="text" placeholder="152****7926">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="self-info-right last2 clearfix" data-las="las">
+                            <div class="self-info-left">
+                                <label for="">品牌
+                                    <input data-in="in" type="text" placeholder="拉古斯">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">运费
+                                    <input data-in="in" type="text" placeholder="15097927270">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="self-info-right" data-las="las">
+                            <div class="self-info-left">
+                                <label for="">品牌
+                                    <input data-in="in" type="text" placeholder="拉古斯">
+                                </label>
+                            </div>
+                            <div class="self-info-left">
+                                <label for="">运费
+                                    <input data-in="in" type="text" placeholder="15097927270">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="information clearfix" data-dis="las" id="last">
+                        <h4>商品规格</h4>
+                        <button data-btn="btn" id="btn">添加规格</button>
+                        <form action="">
+                            <div class="price-box clearfix">
+                                <div class="price">
+                                    <label for="">商品供货价格</label>
+                                    <input type="text">
+                                </div>
+                                <div class="price">
+                                    <label for="">平台原价</label>
+                                    <input type="text">
+                                </div>
+                                <div class="price">
+                                    <label for="">平台现价</label>
+                                    <input type="text">
+                                </div>
+                                <div class="price">
+                                    <label for="">所需学币量</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="commodity-box clearfix">
+                                <div class="commodity">
+                                    <label for="">商品规格</label>
+                                    <input type="text">
+                                </div>
+                                <div class="commodity">
+                                    <label for="">商品颜色</label>
+                                    <input type="text">
+                                </div>
+                                <div class="commodity">
+                                    <label for="">商品尺寸</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="commodity" id="commodity1">
+                    <h4>商品详情</h4>
+                    <div class="commodity-list clearfix">
+                        <p>商品列表缩略图</p>
+                        <div class="photo">
+                            <img src="../../images/web/head_pic.png" alt="">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="commodity-list clearfix">
+                        <p>商品详情轮播图</p>
+                        <div class="photo">
+                            <img src="../../images/web/big_pic.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="commodity-info">
+                        <h4>商品详情介绍</h4>
+                        <textarea></textarea>
+                    </div>
+                    <div class="commodity-info">
+                        <h4>备注信息</h4>
+                        <textarea></textarea>
+                    </div>
+                    <div class="footer">
+                        <button class="btn-no">返回</button>
+                        <button class="btn-yes">保存
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="information clearfix append" id="append">
+        <h4>商品规格</h4>
+        <button data-btn="btn" id="remove">删除</button>
+        <form action="">
+            <div class="price-box clearfix">
+                <div class="price">
+                    <label for="">商品供货价格</label>
+                    <input type="text">
+                </div>
+                <div class="price">
+                    <label for="">平台原价</label>
+                    <input type="text">
+                </div>
+                <div class="price">
+                    <label for="">平台现价</label>
+                    <input type="text">
+                </div>
+                <div class="price">
+                    <label for="">所需学币量</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="commodity-box clearfix">
+                <div class="commodity">
+                    <label for="">商品规格</label>
+                    <input type="text">
+                </div>
+                <div class="commodity">
+                    <label for="">商品颜色</label>
+                    <input type="text">
+                </div>
+                <div class="commodity">
+                    <label for="">商品尺寸</label>
+                    <input type="text">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="../../layui.js"></script>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../js/user-control/suppiler-commodity.js"></script>
+    <script src="../../js/user-control/showOrhide.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+html,
+bpdy {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+input {
+    padding-left: 0.15rem;
+}
+
+.list-data {
+    background: white;
+    margin-left: 0.2rem;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    padding-right: 0.1rem;
+    position: relative;
+    height: 100%;
+}
+
+.list-data>.form-inline {
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    float: left;
+    margin-right: 100px;
+    padding-bottom: 20px;
+}
+
+.list-data>.form-inline>input {
+    border-color: rgb(192, 182, 182);
+}
+
+.layui-table thead tr {
+    background: rgb(255, 255, 255);
+}
+
+.form-group {
+    font-size: 0.16rem;
+    color: #515151;
+    display: flex;
+    float: left;
+}
+
+.btn-primary {
+    background: #6b7bf6;
+    border: #6b7bf6;
+}
+
+.btn-primary:hover {
+    background: #6b7bf6;
+}
+
+.form-group+.form-group {
+    margin-left: 1rem;
+}
+
+.form-group>label {
+    font-weight: normal;
+}
+
+.layui-laydate .layui-this {
+    background: #6b7b !important;
+}
+
+.form-group>.form-control {
+    width: 0.9rem;
+    height: 0.4rem;
+    margin-left: 10px;
+}
+
+.layui-inline {
+    margin-left: 0.05rem;
+}
+
+.layui-inline>.input1 {
+    float: left;
+}
+
+.layui-inline>span {
+    width: 0.15rem;
+    height: 0.02rem;
+    background: #ccc;
+    float: left;
+    margin-top: 0.19rem;
+    margin-left: 0.05rem;
+    margin-right: 0.05rem;
+}
+
+.form-group>.tel {
+    width: 1.3rem;
+    margin-right: 1rem;
+}
+
+.form-group>input::-webkit-input-placeholder {
+    font-size: 0.16rem;
+}
+
+.form-group>.tel::-webkit-input-placeholder {
+    color: #333;
+}
+
+.data {
+    font-size: 0.16rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+.list-data input {
+    font-size: 0.16rem;
+    height: 0.4rem;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(187, 187, 187)
+}
+
+.layui-input {
+    border-radius: 4px;
+    width: 1.2rem;
+    border-color: #ccc;
+}
+
+#test1 {
+    margin-left: 0.05rem;
+    height: 0.4rem;
+}
+
+.form-control {
+    border-color: #ccc;
+    outline: none !important;
+}
+
+.dispose {
+    float: left;
+    font-size: 0.16rem;
+    padding-left: 0.05rem;
+}
+
+.pl {
+    width: 0.4rem;
+    width: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 0.1rem;
+}
+
+.tel-phone {
+    margin-right: 1rem;
+}
+
+.dispose>input {
+    border: 1px solid #ccc;
+    padding: 0 0.1rem;
+    width: 1rem;
+    height: 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.1rem;
+}
+
+table {
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+.btn-size {
+    margin-left: 0.85rem;
+    width: 1rem;
+    height: 0.4rem;
+    background: #6b7bf6;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.18rem;
+}
+.btn-size:hover{
+    background: #4d5fe3;
+}
+.btn-size:active{
+    background:#4656d2;
+}
+table>thead>tr {
+    height: 0.6rem !important;
+    background: white;
+}
+
+table>tbody>tr:nth-child(odd) {
+    background: rgba(233, 236, 245, 0.4)
+}
+
+.layui-table[lay-even] tr:nth-child(even) {
+    background: rgb(255, 255, 255);
+}
+
+.layui-table[lay-even] tr:nth-child(even):hover {
+    background: rgba(233, 236, 245, 0.8)
+}
+
+.layui-table tbody tr:hover {
+    background: rgba(233, 236, 245, 0.8)
+}
+
+.layui-table td,
+.layui-table th {
+    text-align: center;
+    font-size: 0.16rem;
+}
+
+.layui-table>thead>tr>th {
+    font-size: 0.18rem !important;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.layui-table td,
+.layui-table th {
+    font-size: 0.16rem;
+}
+
+tbody>tr>td {
+    color: rgb(51, 51, 51)
+}
+
+tbody>tr>td:nth-child(4)>a {
+    color: rgb(107, 123, 246)
+}
+
+tbody>tr>td:nth-child(9)>a {
+    color: rgb(107, 123, 246)
+}
+
+tbody>tr>td:last-child {
+    color: rgb(255, 81, 81)
+}
+
+tbody>tr {
+    height: 0.48rem !important;
+}
+
+.layui-table td,
+.layui-table th {
+    padding: 0;
+}
+.modal-backdrop{
+    z-index: 0;
+}
+.content-two{
+    width:470px !important;
+    margin-left:-1rem;
+}
+.content-two>h4{
+    text-align: center;
+    font-size:0.18rem;;
+    color: rgb(107, 123, 246);
+    margin-top:0.2rem;
+    padding-bottom:0.2rem;
+    border-bottom:1px solid #f2f2f2;
+}
+.bank-card{
+    padding-top:0.18rem;
+    padding-bottom:0.18rem;
+    border-bottom:1px solid #f2f2f2;
+}
+.bank-card>span{
+    float: left;
+    font-size:0.18rem;
+    color: rgb(51,51,51);
+    margin-left:0.2rem;
+}
+.bank-card>input{
+    border:1px solid #ccc;
+    width:0.14rem;
+    height:0.14rem;
+    float: right;
+    margin-right:0.2rem;
+    vertical-align: middle;
+    margin-top:0.05rem;
+}
+.modal-content{
+    margin-top:2rem;
+}
+.content-two>.modal-footer{
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.content-two>.modal-footer>.btn-res{
+    margin-right:0.2rem;
+    color: rgb(102,102,102);
+    width:0.6rem;
+    height:0.3rem;
+    border: none;
+    background:rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size:0.14rem;
+}
+.content-two>.modal-footer>.btn{
+    width:0.6rem;
+    height:0.3rem;
+    font-size:0.14rem;
+    line-height:30px;
+    padding: 0;
+}
+.content-two>.modal-footer>.btn-ress{
+    margin-left:0.4rem;
+    background:#6b7bf6;
+    color: rgb(255, 255, 255);
+    line-height: 0.3rem
+}
+.content-two>.modal-footer>.btn-ress:hover{
+    background: #4d5fe3;
+}
+.btn-primary{
+    border-color: none;
+}
+.content-two>.modal-footer>.btn-ress:active{
+    background: #4656d2;
+}
+
+.moadl-content-s{
+    width:530px !important;
+    margin-left:1rem !important;
+}
+
+.modal-content{
+    margin-top:2rem;
+    width:9rem;
+    margin-left:-1rem;
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal-header>.info{
+    display: flex;
+    justify-content: center;
+}
+.modal-header>.info>span{
+    width:0.3rem;
+    height:0.01rem;
+    background:rgba(107,123,246,0.5);
+    display:block;
+    float: left;
+    margin-top:0.07rem;
+}
+.modal-header>.info>h4{
+  color:rgb(107, 123, 246);
+  font-size:0.16rem;
+  float: left;
+  margin-left:0.1rem;
+  margin-right:0.1rem;
+}
+.jg-input{
+    border-bottom:1px solid #f2f2f2;
+    padding-bottom:0.05rem;
+}
+.jg-input:nth-child(2){
+    margin-top:0.1rem;
+}
+.jg-input:nth-child(2)>.self-info{
+    margin-left:0.48rem;
+}
+.jg-input:nth-child(3)>.self-info{
+    margin-left:0.48rem;
+}
+.jg-input>.self-info{
+    float: left; 
+    text-align: right;
+}
+.jg-input>.self-info:nth-child(2){
+    float: right;
+}
+.jg-input>.self-info>.self-info-left>label{
+    font-size:0.16rem;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+}
+.jg-input>.self-info>.self-info-left>label>input{
+    width:3rem;
+    height:0.38rem;
+    border:1px solid #ccc;
+    margin-left:0.1rem;
+    padding-left:0.05rem;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer>.button{
+    width:0.6rem;
+    height: 0.3rem;
+    background: #6b7bf6;
+    border: none;
+    margin-left:0.5rem;
+    border-radius: 4px;
+    color:rgb(255, 255, 255);
+    font-size:0.14rem;
+}
+.footer>.button:hover{
+    background: #4d5fe3;
+}
+.footer>.button:active{
+    background: #4656d2;
+}
+.name{
+    float: none;
+}
+select{
+    width:1.3rem;
+    height:0.4rem;
+    border-radius: 4px;
+}

@@ -1,0 +1,261 @@
+.Project-info {
+    width: 100%;
+    background: white;
+    margin-left: 0.15rem;
+    border: 1px solid transparent;
+}
+
+.fenlei {
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.fenlei>.fl-input {
+    float: left;
+}
+
+.fenlei>.fl-input>label {
+    font-size: 0.18rem;
+}
+
+.fenlei>.fl-input>input {
+    width: 3.86rem;
+    height: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 0.04rem;
+    margin-left: 0.1rem;
+}
+
+.fenlei>.fl-input:first-child {
+    margin-right: 1rem;
+}
+
+.fenlei>.fl-input>input::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 0.16rem;
+}
+
+.edition {
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.edition>h4 {
+    font-size: 0.18rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+.edition>button {
+    width: 1rem;
+    height: 0.4rem;
+    background: #6b7bf6;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.18rem;
+    border-radius: 0.04rem;
+    margin-top: -0.1rem;
+}
+
+.edition>button:hover {
+    background: #4d5fe3;
+}
+
+.edition>button:active {
+    background: #4656d2;
+}
+
+.text-edition {
+    margin-left: 0.6rem;
+    margin-top: 0.3rem;
+}
+
+.text-edition>h4 {
+    font-size: 0.18rem;
+}
+
+.text-edition>textarea {
+    width: 10.36rem;
+    height: 1.5rem;
+    background: #f2f2f2;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    padding-left: 0.15rem;
+    padding-top: 0.15rem;
+}
+
+.change {
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.change>h4 {
+    font-size: 0.18rem;
+    float: left;
+    margin-right: 0.8rem;
+}
+
+.change>.footer-btn>button {
+    width: 1rem;
+    height: 0.4rem;
+    border-radius: 0.04rem;
+    font-size: 0.18rem;
+    margin-top: -0.1rem;
+}
+
+.change>.footer-btn>.btn-clear {
+    border: 1px solid #ccc;
+    background: white;
+    margin-right: 0.5rem;
+}
+
+.change>.footer-btn>.btn-photo {
+    background: #6b7bf6;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.change>.footer-btn>.btn-photo:hover {
+    background: #4d5fe3;
+}
+
+.change>.footer-btn>.btn-photo:active {
+    background: #4656d2;
+}
+
+.img {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #f2f2f2;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 0.2rem;
+    margin-top: 0.3rem;
+}
+
+.clear>button {
+    width: 1rem;
+    height: 0.4rem;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 0.18rem;
+    margin-top: 0.3rem;
+    border-radius: 0.04rem;
+}
+.search{
+    margin-top:0.3rem;
+}
+.search>input{
+    width:2.3rem;
+    height:0.4rem;
+    border:1px solid #ccc;
+    border-radius: 0.04rem;
+    float: left;
+}
+.search>.search-icon{
+    width:0.8rem;
+    height:0.4rem;
+    background:#f2f2f2;
+    float: left;
+    position: relative;
+    border-radius:0.04rem;
+}   
+.search>.search-icon>span{
+    background:url("../../images/web/search-banner_default.png") 0 0/0.22rem 0.22rem;
+    width:0.2rem;
+    height:0.2rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-0.11rem;
+    margin-left:-0.11rem;
+}
+
+.bz-info>h4{
+    font-size:0.18rem;
+    margin-left:0.3rem;
+    margin-top:0.3rem;
+}
+.bz-info>textarea{
+    width:10.36rem;
+    height:1.5rem;
+    background: #f2f2f2;
+    margin-left:1rem;
+    margin-top:0.2rem;
+    padding-top:0.15rem;
+    padding-left:0.15rem;
+}
+.footer{
+    margin-top:0.8rem;
+    height:2rem;
+}
+
+
+
+
+
+
+
+
+/* 模态框 */
+.modal-content{
+    margin-top:2rem;
+}
+.modal-content>h4{
+    line-height:0.4rem;
+    padding-left:0.15rem;
+    background:#f2f2f2;
+    font-size:0.18rem;
+}
+.modal-content>.search{
+  padding-left:0.3rem;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom:0.3rem;
+}
+.modal-content>.search>input{
+    width:3.86rem;
+    height:0.4rem;
+    border-radius: 0.04rem;
+    border:1px solid #ccc;
+    float: left;
+    margin-left:0.1rem;
+}
+.modal-content>.search>label{
+    float: left;
+    margin-top:0.06rem;
+    font-size:0.18rem;
+}
+.modal-content>.search>button{
+    width:0.6rem;
+    height:0.3rem;
+    border:1px solid #ccc;
+    background: white;
+    border-radius: 0.04rem;
+    float: left;
+    margin-top:0.05rem;
+    margin-left:0.5rem;
+}
+
+.modal-content>.main{
+    padding-left:0.3rem;
+    height:3rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+.modal-content>.main>p{
+    font-size:0.18rem;
+    margin-top:0.3rem;
+}
+.modal-content>.modal-footer{
+    display:flex;
+    justify-content: center;
+    border-top:1px solid #f2f2f2;
+}
+.modal-content>.modal-footer>button{
+    width:0.6rem;
+    height:0.3rem;
+    border-radius: 0.04rem;
+    font-size:0.16rem;
+    background:white;
+    border:1px solid #ccc;
+    margin-left:0.3rem;
+}

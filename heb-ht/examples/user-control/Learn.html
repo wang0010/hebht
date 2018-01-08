@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>孩儿帮后台管理系统</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layui.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/commont/modal.css">
+    <link rel="stylesheet" href="../../css/commont/input.css">
+    <link rel="stylesheet" href="../../css/user-control/Learn.css">
+</head>
+
+<body class="layui-layout-body">
+
+
+    <div class="box"></div>
+
+
+    <div class="layui-layout layui-layout-admin">
+        <!-- 顶部导航栏 -->
+        <div class="layui-header">
+            <div class="layui-logo">
+                <a href="../../examples/index/index.html">
+                    <span class="logo"></span>
+                    孩儿帮管理平台
+                </a>
+            </div>
+            <ul class="layui-nav layui-layout-left list1">
+                <li class="layui-nav-item">
+                    <a href="../index/personage-info.html">个人信息</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../user-control/APP-user.html">账户管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../APP-admin/banner.html">APP管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../institution/institution-info.html">机构管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../by-stages/byStages-class.html">分期业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../shopping/commodity.html">商城管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../supplier/supplier.html">供货商管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../share-benefit/share-benefit.html">分润管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../financial/financial.html">财务管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../bazaar/bazaar-info.html">市场业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">权限设置</a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right list">
+                <li>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧 侧边栏 -->
+        <div class="layui-side layui-bg-black clearfix">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item sss">
+                        <a class="" href="./APP-user.html">APP用户</a>
+                    </li>
+
+
+                    <li class="layui-nav-item sss">
+                        <a href="javascript:;">机构列表</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="./class-list.html">课程列表</a>
+                            </dd>
+                            <dd>
+                                <a href="./teacher-list.html">老师列表</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./business-list.html">业务员列表</a>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./business-list.html">供货商管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="layui-body clearfix">
+            <!-- 内容主体区域 -->
+            <div class="layui-body-top">
+                <!-- 主体顶部 中间 -->
+                <div class="middle">
+                    <div class="layui-tab" lay-filter="tabDemo" lay-allowClose="true">
+                        <!-- <ul class="layui-tab-title">
+                            <li class="layui-this" lay-id="1">标题1</li>
+                            <li lay-id="2">标题2</li>
+                            <li lay-id="3">标题3</li>
+                            <li lay-id="4">标题4</li>
+                            <li lay-id="5">标题5</li>
+                            <li lay-id="6">标题6</li>
+                            <li lay-id="7">标题7</li>
+                            <li lay-id="8">标题8</li>
+                            <li lay-id="9">标题9</li>
+                        </ul> -->
+                        <!-- <div class="layui-tab-content">
+                  <div class="layui-tab-item layui-show">1</div>
+                  <div class="layui-tab-item">2</div>
+                  <div class="layui-tab-item">3</div>
+                  <div class="layui-tab-item">4</div>
+                  <div class="layui-tab-item">5</div>
+                </div> -->
+                    </div>
+                </div>
+                <!-- 主体顶部  左侧  -->
+                <div class="left clearfix">
+                    <div class="left-arrows">
+                        <span class="arrows arrows-left">
+                            <img src="../../images/web/home_left_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">首页
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 主体顶部 右侧 -->
+                <div class="right clearfix">
+                    <div class="left-arrows arrows-right">
+                        <span class="arrows">
+                            <img src="../../images/web/home_right_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">关闭操作
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 对应内容 信息 -->
+            <div class="silde-info">
+                <h4>待处理消息</h4>
+                <span>
+                    <img src="../../images/web/home_next_default.png" alt="">
+                </span>
+            </div>
+            <!-- 我的银行卡 -->
+            <div class="Learn">
+                <div class="APP-user-input clearfix">
+                    <div class="name status-rz">
+                        <label for="">注册状态</label>
+                        <select name="" id="select">
+                            <option value="全部">全部</option>
+                            <option value="收入">收入</option>
+                            <option value="支出">支出</option>
+                        </select>
+                    </div>
+                    <div class="name status-rz" id="la">
+                        <label for="">支出类型</label>
+                        <select name="" id="select2">
+                            <option value="全部">全部</option>
+                            <option value="认证中">学币兑换</option>
+                            <option value="未认证">兑换商品</option>
+                        </select>
+                    </div>
+                    </select>
+                    <div class="name status-rz" id="lai">
+                        <label for="">收入来源</label>
+                        <select name="" id="select1">
+                            <option value="全部">全部</option>
+                            <option value="赠送奖励">赠送奖励</option>
+                            <option value="商品购买">商品购买</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="status clearfix">
+                    <div class="data clearfix">
+                        提现时间筛选
+                        <div class="layui-inline">
+                            <input type="text" class="layui-input input1" id="test1">
+                            <span></span>
+                            <input type="text" class="layui-input input" id="test1" placeholder="选择截止日期">
+                        </div>
+                    </div>
+                    <button class="btn-charAt">查询</button>
+                </div>
+
+                <table class="layui-table clearfix" lay-even lay-skin="row">
+                    <colgroup>
+                        <col width="200">
+                        <col width="200">
+                        <col width="250">
+                        <col width="300">
+                        <col width="200">
+                        <col width="300">
+                        <col width="300">
+                        <col width="250">
+                        <col width="200">
+                        <col width="350">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>明细类型</th>
+                            <th>学币量</th>
+                            <th>收入来源</th>
+                            <th>奖励类型</th>
+                            <th>支出类型</th>
+                            <th>时间</th>
+                            <th>更新时间</th>
+                            <th>目前学币量</th>
+                            <th>操作</th>
+                            <th>备注</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>收入</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a data-co="cl" href="javascript:;">+21元</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a data-co="cl" href="javascript:;">赠送奖励</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a href="javascript:;" data-cl="co">注册</a>
+                            </td>
+                            <td>无支出</td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>336学币</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal">
+                                <a data-co="cl" href="javascript:;">查看详情</a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>收入</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal1">
+                                <a data-co="cl" href="javascript:;">+21元</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal1">
+                                <a data-co="cl" href="javascript:;">赠送奖励</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal1">
+                                <a href="javascript:;" data-cl="co">认证</a>
+                            </td>
+                            <td>无支出</td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>
+                                2017年10月01日 15:30
+                                <td>336学币</td>
+                                <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal1">
+                                    <a data-co="cl" href="javascript:;">查看详情</a>
+                                </td>
+                                <td></td>
+                        </tr>
+                        <tr>
+                            <td>收入</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal2">
+                                <a data-co="cl" href="javascript:;">-100</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal2">
+                                <a data-co="cl" href="javascript:;">赠送奖励</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal2">
+                                <a href="javascript:;" data-cl="co">要请好友</a>
+                            </td>
+                            <td>无支出</td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>336学币</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal2">
+                                <a data-co="cl" href="javascript:;">查看详情</a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>收入</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal3">
+                                <a data-co="cl" href="javascript:;">-100</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal3">
+                                <a data-co="cl" href="javascript:;">赠送奖励</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal3">
+                                <a href="javascript:;" data-cl="co">签到</a>
+                            </td>
+                            <td>无支出</td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>336学币</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal3">
+                                <a data-co="cl" href="javascript:;">查看详情</a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>收入</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal4">
+                                <a data-co="cl" href="javascript:;">-2000</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal4">
+                                <a data-co="cl" href="javascript:;">赠送奖励</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal4">
+                                <a href="javascript:;" data-cl="co">分享分期课程</a>
+                            </td>
+                            <td>无支出</td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>336学币</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal4">
+                                <a data-co="cl" href="javascript:;">查看详情</a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>收入</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal6">
+                                <a data-co="cl" href="javascript:;">-1200</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal6">
+                                <a data-co="cl" href="javascript:;">赠送奖励</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal6">
+                                <a href="javascript:;" data-cl="co">购物评价</a>
+                            </td>
+                            <td>无支出</td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>336学币</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal6">
+                                <a data-co="cl" href="javascript:;">查看详情</a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>收入</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal6">
+                                <a data-co="cl" href="javascript:;">-1200</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal6">
+                                <a data-co="cl" href="javascript:;">商品购买</a>
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal6">
+                                <a href="javascript:;" data-cl="co">商品购买赠送</a>
+                            </td>
+                            <td>无支出</td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>333学币</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal6">
+                                <a data-co="cl" href="javascript:;">查看详情</a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>支出</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal7">
+                                <a data-co="cl" href="javascript:;      ">-1200</a>
+                            </td>
+                            <td>无收入</td>
+                            <td>
+                                无收入
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal7">
+                                <a data-cl="co" href="javascript:;">学币兑换</a>
+                            </td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>2017年10月01日 15:30</td>
+                            <td>333学币</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal7">
+                                <a data-co="cl" href="javascript:;">查看详情</a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>支出</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal7">
+                                <a data-co="cl" href="javascript:;">-1200</a>
+                            </td>
+                            <td>无收入</td>
+                            <td>
+                                无收入
+                            </td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal7">
+                                <a data-cl="co" href="javascript:;">兑换商品</a>
+                            </td>
+                            <td>
+                                2017年10月01日 15:30
+                            </td>
+                            <td>2017年10月01日 15:30</td>
+                            <td>336学币</td>
+                            <td data-whatever="@fat" data-toggle="modal" data-target="#exampleModal7">
+                                <a data-co="cl" href="javascript:;">查看详情</a>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal7">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="info">
+                            <span></span>
+                            <h4>详细信息</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">明细类型
+                                        <input type="text" placeholder="支出">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">时间
+                                        <input type="text" placeholder="2017年10月01日 15:30">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">学币量
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">更新时间
+                                        <input type="text">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">支出类型
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">商品价格
+                                        <input type="text" placeholder="北京牙牙学语语言培训机构 ">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">供应商
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">商品名称
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">订单号
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jg-input clearfix">
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">目前学币量
+                                    <input type="text" placeholder="333学币">
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer footer">
+                        <button type="button" class="button" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal6">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="info">
+                            <span></span>
+                            <h4>详细信息</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">明细类型
+                                        <input type="text" placeholder="收入">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">时间
+                                        <input type="text" placeholder="2017年10月01日 15:30">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">学币量
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">更新时间
+                                        <input type="text">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">收入来源
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">订单号
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">奖励类型
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jg-input clearfix">
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">目前学币量
+                                    <input type="text" placeholder="333学币">
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer footer">
+                        <button type="button" class="button" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal5">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="info">
+                            <span></span>
+                            <h4>详细信息</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">明细类型
+                                        <input type="text" placeholder="收入">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">时间
+                                        <input type="text" placeholder="2017年10月01日 15:30">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">学币量
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">更新时间
+                                        <input type="text">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">收入来源
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">机构名
+                                        <input type="text" placeholder="北京牙牙学语语言培训机构 ">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">课程周期
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">选择分期
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">奖励类型
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">课程名
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">课程价格
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">分期状态
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jg-input clearfix">
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">目前学币量
+                                    <input type="text" placeholder="333学币">
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer footer">
+                        <button type="button" class="button" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="info">
+                            <span></span>
+                            <h4>详细信息</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">明细类型
+                                        <input type="text" placeholder="收入">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">时间
+                                        <input type="text" placeholder="2017年10月01日 15:30">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">学币量
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">更新时间
+                                        <input type="text">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">收入来源
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">机构名
+                                        <input type="text" placeholder="北京牙牙学语语言培训机构 ">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">选择分期
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">分享平台
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">奖励类型
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">课程名
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jg-input clearfix">
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">目前学币量
+                                    <input type="text" placeholder="333学币">
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer footer">
+                        <button type="button" class="button" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="info">
+                            <span></span>
+                            <h4>详细信息</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">明细类型
+                                        <input type="text" placeholder="收入">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">时间
+                                        <input type="text" placeholder="2017年10月01日 15:30">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">学币量
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">更新时间
+                                        <input type="text">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">收入来源
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">奖励类型
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jg-input clearfix">
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">目前学币量
+                                    <input type="text" placeholder="333学币">
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer footer">
+                        <button type="button" class="button" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="info">
+                            <span></span>
+                            <h4>详细信息</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">明细类型
+                                        <input type="text" placeholder="收入">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">时间
+                                        <input type="text" placeholder="2017年10月01日 15:30">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">学币量
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">更新时间
+                                        <input type="text">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">收入来源
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">好友昵称
+                                        <input type="text" placeholder="2017-05-09">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">奖励类型
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jg-input clearfix">
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">目前学币量
+                                    <input type="text" placeholder="333学币">
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer footer">
+                        <button type="button" class="button" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="info">
+                            <span></span>
+                            <h4>详细信息</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">明细类型
+                                        <input type="text" placeholder="收入">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">时间
+                                        <input type="text" placeholder="2017年10月01日 15:30">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">学币量
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">更新时间
+                                        <input type="text">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">收入来源
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">奖励类型
+                                        <input type="text" placeholder="认证">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jg-input clearfix">
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">目前学币量
+                                    <input type="text" placeholder="333学币">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer footer">
+                        <button type="button" class="button" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="info">
+                            <span></span>
+                            <h4>详细信息</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">明细类型
+                                        <input type="text" placeholder="收入">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">时间
+                                        <input type="text" placeholder="2017年10月01日 15:30">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">学币量
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">更新时间
+                                        <input type="text">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jg-input clearfix">
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">收入来源
+                                        <input type="text" placeholder="余额提现">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">注册时间
+                                        <input type="text" placeholder="2017-05-09">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">个人邀请码
+                                        <input type="text" placeholder="12313222">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="self-info">
+                                <div class="self-info-left">
+                                    <label for="">奖励类型
+                                        <input type="text" placeholder="注册">
+                                    </label>
+                                </div>
+                                <div class="self-info-left">
+                                    <label for="">注册邀请码
+                                        <input type="text" placeholder="22121214">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jg-input clearfix">
+                        <div class="self-info">
+                            <div class="self-info-left">
+                                <label for="">学币
+                                    <input type="text" placeholder="333学币">
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer footer">
+                        <button type="button" class="button" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../layui.js"></script>
+        <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../js/user-control/Learn.js"></script>
+        <script>
+            //JavaScript代码区域
+            layui.use('element', function () {
+                var element = layui.element;
+
+            }); 
+        </script>
+</body>
+
+</html>

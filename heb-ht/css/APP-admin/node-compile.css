@@ -1,0 +1,40 @@
+.footer{
+    margin-top:0.5rem;
+}
+.type{
+    float: left;
+    margin-bottom:0.3rem;
+}
+.push{
+    float: left;
+    margin-top:0.3rem;
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.push>select{
+    width:2.5rem;
+    height:0.4rem;
+    border-radius: 4px;
+    margin-left:0.1rem;
+}
+.btn-push{
+    border:1px solid rgb(107,123,246);
+    color:rgb(107,123,246);
+    margin-left:0.5rem;
+    background: white;
+    margin-right:0.5rem;
+}
+.ipone{
+    margin-top:0.3rem;
+    margin-left:0.3rem;
+}
+.ipone>input{
+    width:2.5rem;
+    height:0.4rem;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+input{
+    margin-left:0.1rem;
+}

@@ -1,0 +1,367 @@
+
+.teacher-add{
+    width:100%;
+    background:white;
+    border: 1px solid transparent;
+    margin-left:0.15rem;
+}
+.upPhoto{
+    margin-left:-0.4rem;
+    margin-top:0.3rem;
+    margin-bottom:0.3rem;
+}
+.upPhoto>h4{
+    font-size:0.18rem;
+    float: left;
+}
+.upPhoto>.img{
+    width:2.2rem;
+    height:2.2rem;
+    background:#f2f2f2;
+    text-align: center;
+    line-height:2.2rem;
+    margin-left:1rem;
+}
+.information {
+    width: 100%;
+    background: white;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.base-info {
+    position: relative;
+    background: white;
+    margin-left: 0.15rem;
+    width: 100%;
+    height: 16rem;
+}
+
+.information>h4 {
+    font-size: 0.18rem;
+    margin-top: 0.15rem;
+    margin-left: 0.3rem;
+    font-weight: 500;
+}
+
+.information>.self-info {
+    margin-left: 0.7rem;
+    margin-top: 0.15rem;
+    float: left;
+    text-align: right;
+    margin-right: 2.83rem;
+}
+
+.information>.self-info-right {
+    float: left;
+    margin-top: 0.15rem;
+    text-align: right;
+}
+label {
+    font-size: 0.16rem;
+    font-weight: normal;
+    color: rgb(102, 102, 102);
+}
+
+.self-info-left+.self-info-left {
+    margin-top: 0.1rem;
+}
+.information input::-webkit-input-placeholder {
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+}
+
+input {
+    width: 3.86rem;
+    height: 0.38rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: 0.3rem;
+    padding-left: 5px;
+}
+label{
+    color: rgb(102, 102, 102);
+}
+input{
+    text-align: center;
+}
+/* 个人标签 */
+.label1{
+    margin-top:0.3rem;
+    margin-left:0.3rem;
+    position: relative;
+}
+.label1>h4{
+    font-size: 0.18rem;
+}
+.label1>span{
+    display: block;
+    border: 1px solid rgb(107,123,246);
+    font-size:0.14rem;
+    color: rgb(107,123,246);
+    border-radius: 0.15rem;
+    text-align: center;
+    line-height:0.3rem;
+    margin-top:0.2rem;
+}
+.label1>ul>li{
+        margin-top:0.2rem;
+    border: 1px solid rgb(107,123,246);
+    width:0.5rem;
+    height:0.3rem;
+    margin-left:0.8rem;
+    float: left;
+    border-radius: 0.15rem;
+    text-align: center;
+    line-height:0.3rem;
+}
+.label1>ul>li>a{
+    color: rgb(107,123,246);
+    font-size:0.16rem;
+}
+.label1>.add{
+    width:0.96rem;
+    height:0.3rem;
+    float: left;
+    margin-left:0.5rem;
+    cursor: pointer;
+}
+.close{
+    background:url("../../images/web/delete_default.png") 0 0/0.19rem 0.19rem;
+    width:0.19rem;
+    height:0.19rem;
+    position: absolute;
+    top:0.45rem;
+    left:1.4rem;
+}
+.close:hover{
+    background: url("../../images/web/delete_selected.png")0 0 /0.19rem 0.19rem;
+}
+.ss{
+    margin-left:0.4rem !important;
+}
+/* 个人名言 */
+.dictum{
+    margin-left:0.3rem;
+    margin-top:0.3rem;
+    position: relative;
+}
+.dictum>h4{
+    font-size:0.18rem;
+}
+textarea{
+    width:10.32rem;
+    height:0.5rem;
+    background:#f2f2f2;
+    margin-left:0.8rem;
+    margin-top:0.2rem;
+}
+textarea{
+    padding-left:0.15rem;
+    padding-top:0.15rem;
+}
+textarea::-webkit-input-placeholder{
+    color: rgb(181,181,181);
+    font-size:0.16rem;
+}
+.dictum>div{
+    position: absolute;
+    left:10.45rem;
+    bottom: 0.18rem;
+}
+.dictum>div>span{
+    font-size: 0.16rem;
+    color: rgb(181,181,181);
+}
+/* 个人成就 */
+.accomp{
+    margin-top:0.3rem;
+    margin-left:0.3rem;
+    position: relative;
+}
+.accomp>h4{
+    font-size:0.18rem;
+}
+.accomp>img{
+    margin-left:0.8rem;
+    margin-top:0.3rem;
+    float: left;
+    margin-bottom:0.2rem;
+}
+.accomp>button{
+    width:0.5rem;
+    height:0.32rem;
+    color: rgb(102, 102, 102);
+    border:1px solid rgb(102, 102, 102);
+    font-size: 0.14rem;
+    background: white;
+    border-radius: 4px;
+    margin-left:0.48rem;
+    margin-top:0.55rem;
+    float: left;
+}
+.accomp>.self-info>div>label>input{
+    margin-left:0.14rem !important;
+}
+.accomp>.self-info{
+    margin-bottom:0.2rem;
+}
+.accomp>.self-info>div>label>input::-webkit-input-placeholder{
+    text-align: center;
+}
+.hh{
+    float: left;
+    font-size:0.16rem !important;
+    color: rgb(102, 102, 102);
+    margin-right:0.2rem;
+    line-height:0.5rem;
+}
+.accomp>textarea{
+   margin-top: 0;
+   margin-left:0;
+}
+.accomp>.number{
+    position: absolute;
+    left:10.45rem;
+    bottom:0.77rem;
+}
+.accomp>.number>span{
+   font-size: 0.16rem;
+   color: rgb(187,187,187);
+}
+.accomp>.new{
+    width:1.54rem;
+    height:0.4rem;
+    border: 1px solid rgb(107,123,246);
+    color: rgb(107,123,246);
+    border-radius: 4px;
+    text-align: center;
+    line-height:0.4rem;
+    margin-left:0.85rem;
+    margin-top:0.2rem;
+    cursor: pointer;
+}
+/* 其它信息 */
+.other{
+    margin-left:0.3rem;
+    margin-top:0.3rem;
+}
+.other>h4{
+    font-size:0.18rem;
+}
+.input-l{
+    margin-top:0.3rem;
+    text-align: right;
+    float: left;
+    margin-right:1.5rem;
+}
+.input-l>.input:last-child{
+    margin-top:0.15rem;
+}
+.input-r{
+    margin-top:0.3rem;
+}
+.input-l>div>input::-webkit-input-placeholder,
+.input-r>div>input::-webkit-input-placeholder{
+    text-align: center;
+}
+.footer{
+    height:2rem;
+}
+
+.modal-footer{
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-left:-1.1rem;
+}
+.modal-footer>button{
+    width:1rem;
+    height: 0.4rem;
+    margin-left: 0;
+    border-radius:4px;
+    font-size:0.18rem;
+    margin-top:0.54rem;
+}
+.modal-footer>.btn-yes{
+    background: white;
+    border: 1px solid #6b7bf6;
+    color: #6b7bf6;
+}
+.modal-footer>.btn-no{
+    background:#6b7bf6;
+    color:rgb(255,255,255);
+    border: none;
+    margin-left:0.5rem;
+}
+.modal-footer>.btn-no:hover{
+    background:#4d5fe3;
+}
+.modal-footer>.btn-no:active{
+    background:#4656d2;
+}
+
+.modal-content{
+    margin-top:2rem;
+    width:450px;
+}
+.modal-content>h4{
+    font-size: 0.18rem;
+    padding-left:0.15rem;
+    line-height:0.5rem;
+    background: #f2f2f2;
+}
+.modal-content>.input{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.modal-content>.input>input{
+    width:350px;
+    height:40px;;
+    border: 1px solid #ccc;
+    margin-left: 0;
+    margin-top:0.3rem;
+    margin-bottom:0.3rem;
+}
+.modal-content>.modal-footer{
+    display: flex !important;
+    justify-content: center !important;
+    margin-left:0 !important;
+    border-top: 1px solid  #f2f2f2;
+}
+.modal-content>.modal-footer>button{
+    margin-top: 0;
+    width:0.6rem;
+    height:0.3rem;
+    font-size: 0.14rem;
+}
+.modal-content>.modal-footer>button:first-child{
+    background: white;
+    border: 1px solid #ccc;
+    margin-right:0.3rem;
+}
+.modal-content>.modal-footer>button:last-child{
+    background:#6b7bf6;
+    border:none;
+    color: rgb(255,255,255);
+}
+.modal-content>.modal-footer>button:last-child:hover{
+    background: #4d5fe3;
+}
+.modal-content>.modal-footer>button:last-child:active{
+    background: #4656d2;
+}
+.modal-content>.input>div{
+    position: absolute;
+    top:43px;
+    right:60px;
+}
+.modal-content>.input>div>span{
+    font-size:0.14rem;
+    color: rgb(102, 102, 102);
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>孩儿帮后台管理系统</title>
+    <link rel="stylesheet" href="../../lay/less/index.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layui.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/commont/input.css">
+    <link rel="stylesheet" href="../../css/commont/info.css">
+    <link rel="stylesheet" href="../../css/byStage-class/byStages-class.css">
+
+
+    <style>
+        .base-info {
+            height: 13rem;
+        }
+
+        .type {
+            margin-left: -0.3rem;
+        }
+
+        .information:nth-child(2) {
+            padding-top: 0.2rem;
+            padding-bottom: 0.5rem !important;
+        }
+
+        .information:last-child {
+            padding-top: 0.2rem;
+            padding-bottom: 0.5rem !important;
+        }
+    </style>
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <!-- 顶部导航栏 -->
+        <div class="layui-header">
+            <div class="layui-logo">
+                <a href="../examples/../index/index.html">
+                    <span class="logo"></span>
+                    孩儿帮管理平台
+                </a>
+            </div>
+            <ul class="layui-nav layui-layout-left list1">
+                <li class="layui-nav-item">
+                    <a href="./../index/personage-info.html">个人信息</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./../user-control/APP-user.html">账户管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../APP-admin/banner.html">APP管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../institution/institution-info.html">机构管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./byStages-class.html">分期业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../shopping/commodity.html">商城管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../supplier/supplier.html">供货商管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../share-benefit/share-benefit.html">分润管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../financial/financial.html">财务管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../bazaar/bazaar-info.html">市场业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">权限设置</a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right list">
+                <li>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧 侧边栏 -->
+        <div class="layui-side layui-bg-black clearfix">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item sss">
+                        <a href="javscript:;">分期课程</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="./Has-been.html">已分期</a>
+                            </dd>
+                            <dd>
+                                <a href="./To-audit.html">待审核</a>
+                            </dd>
+                            <dd>
+                                <a href="">审核未通过</a>
+                            </dd>
+                            <dd>
+                                <a href="./byStages-class.html">逾期用户</a>
+                            </dd>
+                            <dd>
+                                <a href="./To-audit.html">分期完结</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./activity-class.html">活动课程</a>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./drop-out.html">退课管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="layui-body clearfix">
+            <!-- 内容主体区域 -->
+            <div class="layui-body-top">
+                <!-- 主体顶部 中间 -->
+                <div class="middle"></div>
+                <!-- 主体顶部  左侧  -->
+                <div class="left">
+                    <div class="left-arrows">
+                        <span class="arrows">
+                            <img src="../../images/web/home_left_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">首页
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 主体顶部 右侧 -->
+                <div class="right clearfix">
+                    <div class="left-arrows">
+                        <span class="arrows">
+                            <img src="../../images/web/home_right_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">关闭操作
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 对应内容 信息 -->
+            <div class="silde-info">
+                <h4>待处理消息</h4>
+                <span>
+                    <img src="../../images/web/home_next_default.png" alt="">
+                </span>
+            </div>
+
+
+            <!-- 基本信息 -->
+            <div class="base-info clearfix">
+                <div class="information clearfix">
+                    <h4>基本信息</h4>
+                    <span class="down"></span>
+                    <span class="upDown">收起</span>
+                    <div class="self-info first clearfix">
+                        <div class="self-info-left">
+                            <label for="">昵称
+                                <input type="text" placeholder="152****7926">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">个人邀请码
+                                <input type="text" placeholder="拉古斯">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">学币
+                                <input type="text" placeholder="15097927270">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">余额
+                                <input type="text" placeholder="343学币">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="self-info-right last clearfix">
+                        <div class="self-info-left">
+                            <label for="">注册账号
+                                <input type="text" placeholder="拉古斯">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">注册时间
+                                <input type="text" placeholder="15097927270">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">注册邀请码
+                                <input type="text" placeholder="123456">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">认证状态
+                                <input type="text" placeholder="未认证">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="information clearfix">
+                    <span class="down"></span>
+                    <span class="upDown">收起</span>
+                    <div class="self-info first1 clearfix">
+                        <div class="self-info-left">
+                            <label for="">开户银行
+                                <input type="text" placeholder="某某">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">银行支行
+                                <input type="text" placeholder="男">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">银行卡号
+                                <input type="text" placeholder="35">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">绑定手机号
+                                <input type="text" placeholder="河北省邢台市隆尧县">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="information clearfix">
+                    <h4>购买信息</h4>
+                    <span class="down"></span>
+                    <span class="upDown">收起</span>
+                    <div class="self-info first2 clearfix">
+                        <div class="self-info-left">
+                            <label for="">报名机构
+                                <input type="text" placeholder="某某">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">课程原价
+                                <input type="text" placeholder="男">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">课程模式
+                                <input type="text" placeholder="35">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">起始时间
+                                <input type="text" placeholder="河北省邢台市隆尧县">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">上课时间
+                                <input type="text" placeholder="孩儿帮教育股份咨询有限公司">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="self-info-right last2 clearfix">
+                        <div class="self-info-left">
+                            <label for="">报名课程
+                                <input type="text" placeholder="王某">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">课程现价
+                                <input type="text" placeholder="男">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">课程周期
+                                <input type="text" placeholder="15">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">结束时间
+                                <input type="text" placeholder="北京">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="information clearfix">
+                    <span class="down"></span>
+                    <span class="upDown">收起</span>
+                    <div class="self-info first3 clearfix">
+                        <div class="self-info-left">
+                            <label for="">时间
+                                <input type="text" placeholder="某某">
+                            </label>
+                        </div>
+                        <div class="self-info-left">
+                            <label for="">支付时间
+                                <input type="text" placeholder="男">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="self-info-right last3 clearfix">
+                        <div class="self-info-left type">
+                            <label for="">支付方式
+                                <input type="text" placeholder="王某">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="../../lay/less.js"></script>
+            <script src="../../layui.js"></script>
+            <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="../../js/user-control/showOrhide.js"></script>
+            <script>
+                //JavaScript代码区域
+                layui.use('element', function () {
+                    var element = layui.element;
+
+                });
+            </script>
+</body>
+
+</html>

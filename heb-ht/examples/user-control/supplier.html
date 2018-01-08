@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>孩儿帮后台管理系统</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layui.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/commont/input.css">
+    <link rel="stylesheet" href="../../css/commont/small-modal.css">
+    <link rel="stylesheet" href="../../css/user-control/teacher-list.css">
+
+
+    <style>
+        tbody>tr>td>a[data-cl] {
+            color: rgb(107, 123, 246);
+        }
+    </style>
+
+</head>
+
+<body class="layui-layout-body">
+
+
+    <div class="box"></div>
+
+
+    <div class="layui-layout layui-layout-admin">
+        <!-- 顶部导航栏 -->
+        <div class="layui-header">
+            <div class="layui-logo">
+                <a href="../../examples/index/index.html">
+                    <span class="logo"></span>
+                    孩儿帮管理平台
+                </a>
+            </div>
+            <ul class="layui-nav layui-layout-left list1">
+                <li class="layui-nav-item">
+                    <a href="../index/personage-info.html">个人信息</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../user-control/APP-user.html">账户管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../APP-admin/banner.html">APP管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../institution/institution-info.html">机构管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../by-stages/byStages-class.html">分期业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../shopping/commodity.html">商城管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../supplier/supplier.html">供货商管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../share-benefit/share-benefit.html">分润管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../financial/financial.html">财务管理</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../bazaar/bazaar-info.html">市场业务</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">权限设置</a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right list">
+                <li>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧 侧边栏 -->
+        <div class="layui-side layui-bg-black clearfix">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item sss">
+                        <a class="" href="./APP-user.html">APP用户</a>
+                    </li>
+
+
+                    <li class="layui-nav-item sss">
+                        <a href="../user-control/institution-list.html">机构列表</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="javascript:;">课程列表</a>
+                            </dd>
+                            <dd>
+                                <a href="./teacher-list.html">老师列表</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="./business-list.html">业务员列表</a>
+                    </li>
+                    <li class="layui-nav-item sss">
+                        <a href="javscript:;">供货商管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="layui-body clearfix">
+            <!-- 内容主体区域 -->
+            <div class="layui-body-top">
+                <!-- 主体顶部 中间 -->
+                <div class="middle">
+                    <div class="layui-tab" lay-filter="tabDemo" lay-allowClose="true">
+                        <!-- <ul class="layui-tab-title">
+                            <li class="layui-this" lay-id="1">标题1</li>
+                            <li lay-id="2">标题2</li>
+                            <li lay-id="3">标题3</li>
+                            <li lay-id="4">标题4</li>
+                            <li lay-id="5">标题5</li>
+                            <li lay-id="6">标题6</li>
+                            <li lay-id="7">标题7</li>
+                            <li lay-id="8">标题8</li>
+                            <li lay-id="9">标题9</li>
+                        </ul> -->
+                        <!-- <div class="layui-tab-content">
+                  <div class="layui-tab-item layui-show">1</div>
+                  <div class="layui-tab-item">2</div>
+                  <div class="layui-tab-item">3</div>
+                  <div class="layui-tab-item">4</div>
+                  <div class="layui-tab-item">5</div>
+                </div> -->
+                    </div>
+                </div>
+                <!-- 主体顶部  左侧  -->
+                <div class="left clearfix">
+                    <div class="left-arrows">
+                        <span class="arrows arrows-left">
+                            <img src="../../images/web/home_left_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">首页
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 主体顶部 右侧 -->
+                <div class="right clearfix">
+                    <div class="left-arrows arrows-right">
+                        <span class="arrows">
+                            <img src="../../images/web/home_right_default.png" alt="">
+                        </span>
+                    </div>
+                    <div class="info">关闭操作
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 对应内容 信息 -->
+            <div class="silde-info">
+                <h4>待处理消息</h4>
+                <span>
+                    <img src="../../images/web/home_next_default.png" alt="">
+                </span>
+            </div>
+
+
+            <!-- 老师详情 -->
+            <div class="teacher">
+                <form id="form">
+                    <div class="status clearfix">
+                        <div class="status-rz">
+                            <label for="">供货商</label>
+                            <input name="supplierName" type="text">
+                        </div>
+                        <div class="status-rz" id="la">
+                            <label for="">联系人</label>
+                            <input name="userName" type="text">
+                        </div>
+                        <div class="data">
+                            创建时间筛选
+                            <div class="layui-inline">
+                                <input name="beginTime" type="text" class=" input1" id="test1">
+                                <span></span>
+                                <input name="endTime" type="text" class="input" id="test1" placeholder="选择截止日期">
+                            </div>
+                        </div>
+                        <div class="footer-all">
+                            <button class="btn-charAt">查询</button>
+                        </div>
+                    </div>
+                </form>
+                <table class="layui-table clearfix" lay-even lay-skin="row">
+                    <colgroup>
+                        <col width="300">
+                        <col width="250">
+                        <col width="300">
+                        <col width="400">
+                        <col width="300">
+                        <col width="250">
+                        <col width="500">
+                        <col width="400">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>供货商</th>
+                            <th>联系人</th>
+                            <th>联系电话</th>
+                            <th>供货商地址</th>
+                            <th>商品数量</th>
+                            <th>运费</th>
+                            <th>
+                                创建时间
+                            </th>
+                            <th>
+                                操作
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="./supplier-info.html" data-cl="cl">深圳腾邦海捣网</a>
+                            </td>
+                            <td>
+                                李先生
+                            </td>
+                            <td>
+                                15097927270
+                            </td>
+                            <td>
+                                深圳市
+                            </td>
+                            <td>
+                                <a href="./supplier-number.html" data-cl="cl">69</a>
+                            </td>
+                            <td>00.00</td>
+                            <td>2017年10月01日 15:30</td>
+                            <td>
+                                <a href="javascript:;" data-cl="cl" data-toggle="modal" data-target=".bs-example-modal-sm">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="modal fade bs-example-modal-sm">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">删除</h4>
+                    </div>
+                    <p>确定删除此信息吗</p>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn-no btn-res" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn-yes btn-res">确定</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="../../layui.js"></script>
+        <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../js/commont.js"></script>
+        <script>
+            //JavaScript代码区域
+            layui.use('element', function () {
+                var element = layui.element;
+
+            });
+
+            var btn = $("tbody>tr>td:last-child>a");
+            $("body").on("click", ".modal-footer>.btn-yes", function () {
+                $.ajax({
+                    url: url + "user_deleteSupplierById.do",
+                    data: { userId: 1 },
+                    dataType: "jsonp",
+                    jsonp: "jsonpCallback",
+                    success: function (data) {
+                        console.log(data)
+                    }
+                })
+            })
+
+
+            $(".btn-charAt").on("click", function () {
+                var form = document.querySelector("#form");
+                var ss = $(form).serialize()
+                $.ajax({
+                    type: "post",
+                    url: url + "user_querySupplierList.do",
+                    dataType: "jsonp",
+                    jsonp: "jsonpCallback",
+                    success: function (data) {
+                        console.log(data)
+                    }
+                })
+
+                return false;
+            })
+
+
+        </script>
+</body>
+
+</html>

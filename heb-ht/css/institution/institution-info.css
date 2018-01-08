@@ -1,0 +1,86 @@
+.institution-info {
+    width: 100%;
+    background: white;
+    margin-left: 0.15rem;
+    border: 1px solid transparent;
+}
+
+.set>label>input {
+    background: #f2f2f2;
+}
+
+.modal-footer {
+    height: 2.5rem;
+}
+
+.information {
+    padding-bottom: 0.3rem;
+}
+
+.information>h4 {
+    margin-top: 0.3rem;
+}
+
+.ins-class {
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.ins-class>.append>p {
+    font-size: 0.18rem;
+    float: left;
+    margin-top:0.05rem;
+}
+
+.ins-class>.append>ul {
+    float: left;
+}
+
+.ins-class>.append>ul>li {
+    float: left;
+    width: 1.5rem;
+    height: 0.4rem;
+    border: 1px solid #ccc;
+    margin-left: 0.3rem;
+    border-radius: 0.04rem;
+    text-align: center;
+    line-height:0.4rem;
+}
+
+button {
+    width: 1rem;
+    height: 0.4rem;
+    font-size: 0.18rem;
+    border: 1px solid rgb(107,123,246);
+    color: rgb(107,123,246);
+    margin-top:0;
+}
+
+.ins-class>button{
+ float: left;
+ margin-left:0.8rem;
+}
+
+.class-age{
+    margin-top:0.3rem;
+    margin-left:0.3rem;
+    padding-bottom:0.3rem;
+}
+.class-age>label{
+    font-size:0.18rem;
+    float: left;
+    margin-top:0.05rem;
+    color:rgb(51,51,51)
+}
+.class-age>input{
+    width:3.86rem;
+    height:0.4rem;
+    border:1px solid #ccc;
+    border-radius: 0.04rem;
+    float: left;
+    margin-left:0.3rem;
+}
+.class-age>button{
+    float: left;
+    margin-left:0.8rem;
+}
